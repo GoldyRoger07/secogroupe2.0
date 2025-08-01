@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy": "ng build --base-href /secogroupe2.0/ && npx angular-cli-ghpages --dir=dist/secogroupe",
     "test": "ng test"
   },
   "private": true,
