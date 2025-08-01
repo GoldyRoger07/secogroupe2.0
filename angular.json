@@ -36,7 +36,8 @@
             ],
             "scripts": [
                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ]
+            ],
+            "outputPath": "dist/secogroupe"
           },
           "configurations": {
             "production": {
@@ -96,6 +97,9 @@
               "src/styles.scss"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

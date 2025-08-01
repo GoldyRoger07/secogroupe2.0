@@ -14,10 +14,10 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                            <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">A propos</a>
+                            <a class="nav-link" routerLinkActive="active" routerLink="/a-propos">A propos</a>
                         </li>
                      
                         <li class="nav-item dropdown">
@@ -40,7 +40,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact</a>
                         </li>
                     </ul>
                    
