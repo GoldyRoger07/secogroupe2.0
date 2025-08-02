@@ -1,0 +1,23 @@
+<app-header [menuAutoHide]="false"/>
+    <app-banner/>
+    <section class="container">
+       
+            <div>
+                <h2>Nos entreprises à l'international</h2>
+                <p>Lorem ipsum sicing elit. Molestiaeniet maiores sunt nescitium labore deserunt dolorum voluptatem earum at corrupti!</p>
+
+            </div>
+            
+            <div class="cards-flex">
+                @for(cardInfo of cardDetails.infos ; track $index){
+                    <a [routerLink]="['/filiales', pays[$index]]">
+                        <my-card [version]="cardDetails.id" [cover]="cardInfo.cover" [title1]="cardInfo.title" title2="Seco Groupe" />
+                    </a>
+                    
+                }
+                
+            </div>
+        
+    </section>
+<app-footer/>
+

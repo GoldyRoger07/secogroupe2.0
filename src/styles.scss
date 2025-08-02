@@ -52,6 +52,7 @@ Author URL: http://w3layouts.com
 
 body {
   --inner-banner: url(/images/inner-banner.jpg);
+  // online --inner-banner:  url(/secogroupe2.0/images/inner-banner.jpg);
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
@@ -19270,35 +19271,40 @@ h5.small-title {
 }
 
 .slide:first-child {
-  background: url(/images/banner1.jpg) no-repeat center bottom/cover;
+  // online background: url(/images/banner1.jpg)  url(/images/banner4.jpg)  no-repeat center bottom/cover;
+  background: url(/images/banner1.jpg),url(/secogroupe2.0/images/banner1.jpg) no-repeat center bottom/cover;
 }
 
 .slide:nth-child(2) {
-  background: url(/images/banner4.jpg) no-repeat center bottom/cover;
+  // background: url(/images/banner4.jpg) no-repeat center bottom/cover;
+   background:  url(/images/banner4.jpg), url(/secogroupe2.0/images/banner4.jpg) no-repeat center bottom/cover;
+
 }
 
 .slide:nth-child(3) {
-  background: url(/images/banner3.jpg) no-repeat center bottom/cover;
+  // background: url(/images/banner3.jpg) no-repeat center bottom/cover;
+  background: url(/images/banner3.jpg),url(/secogroupe2.0/images/banner3.jpg) no-repeat center bottom/cover;
 }
 
 .slide:nth-child(4) {
-  background: url(/images/banner4.jpg) no-repeat center bottom/cover;
+  // background: url(/images/banner4.jpg) no-repeat center bottom/cover;
+  background: url(/images/banner4.jpg), url(/secogroupe2.0/images/banner4.jpg) no-repeat center bottom/cover;
 }
 
 /* .slide:first-child {
-  background: url(/images/new/image1.png) no-repeat center top/cover;
+  background: url(./secogroupe2.0/images/new/image1.png) no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
-  background: url(/images/new/image2.png) no-repeat center top/cover;
+  background: url(./secogroupe2.0/images/new/image2.png) no-repeat center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url(/images/new/image3.jpg) no-repeat center top/cover;
+  background: url(./secogroupe2.0/images/new/image3.jpg) no-repeat center top/cover;
 }
 
 .slide:nth-child(4) {
-  background: url(/images/new/image4.jpg) no-repeat center top/cover;
+  background: url(./secogroupe2.0/images/new/image4.jpg) no-repeat center top/cover;
 } */
 
 .buttons button#prev {
@@ -19636,14 +19642,18 @@ h4.number {
 
 .w3l-homeblock3 .top-pic1 {
   background: url(/images/img-bg1.jpg) no-repeat 0px 0px;
+  // online background: url(/images/img-bg1.jpg) url(/secogroupe2.0/images/img-bg1.jpg) no-repeat 0px 0px;
 }
 
 .w3l-homeblock3 .top-pic2 {
-  background: url(/images/img-bg2.jpg) no-repeat 0px 0px;
+  background: url(/images/img-bg1.jpg)  no-repeat 0px 0px;
+  // online background:  url(/secogroupe2.0/images/img-bg2.jpg) no-repeat 0px 0px;
+
 }
 
 .w3l-homeblock3 .top-pic3 {
-  background: url(/images/img-bg3.jpg) no-repeat 0px 0px;
+  background: url(/images/img-bg1.jpg) no-repeat 0px 0px;
+  // online background: url(/images/img-bg1.jpg) url(/secogroupe2.0/images/img-bg3.jpg) no-repeat 0px 0px;
 }
 
 .w3l-homeblock3 .top-pic1,
@@ -19747,7 +19757,9 @@ h4.number {
 /* testimonials section */
 .w3l-index4 {
   background: url(/images/bg1.jpg) no-repeat center;
-  /* background: url(/images/new/image4.jpg) no-repeat center; */
+  // online background: url(/images/bg1.jpg) url(/secogroupe2.0/images/bg1.jpg) no-repeat center;
+
+  /* background: url(./secogroupe2.0/secogroupe2.0/images/new/image4.jpg) no-repeat center; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20761,6 +20773,7 @@ h4.inner-text-title {
 /* content block */
 .w3l-content1 {
   background: url(/images/banner3.jpg) no-repeat center;
+  // online  background: url(/images/banner3.jpg) url(/secogroupe2.0/images/banner3.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -21632,7 +21645,7 @@ span.nav-arrow-label i {
 
 /* error page */
 .error-page {
-  /* background: url(/images/inner-banner.jpg) no-repeat center; */
+  /* background: url(images/inner-banner.jpg) no-repeat center; */
   background: var(--inner-banner) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -21988,7 +22001,7 @@ h5.texti {
 
 // style.css
 .my-logo{
-    width: 60px;
+    width: 100px;
     /* background: #f52029; */
 }
 
@@ -22081,8 +22094,9 @@ h5.texti {
 
 .service-card .front{
 
-    background: #fbad19;
-    /* background-image: url(/images/new/bg_card_services_3.jpg); */
+    background: #f1f1f1;
+    border-radius: 10px;
+    /* background-image: url(images/new/bg_card_services_3.jpg); */
     /* background-position: center;
     background-size: cover;
     background-repeat: no-repeat; */
@@ -22090,21 +22104,24 @@ h5.texti {
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
-    color: #fff;
+    color: #fbad19;
+    // border: 1px solid #f1f1f1;
     /* gap: 20px; */
 }
 
 
 .service-card .back{
     /* background:#434343; */
-    background: #fbad19;
+    background: #f1f1f1;
+    border-radius: 10px;
     transform: rotateY(180deg);
-    /* background-image: url(/images/new/bg_card_services_3.jpg);
+    /* background-image: url(images/new/bg_card_services_3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; */
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     /* align-items: end; */
 
 }
@@ -22145,7 +22162,7 @@ h5.texti {
     align-items: center;
     justify-content: center;
     /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fht.linkedin.com%2Fcompany%2Fseco-s%25C3%25A9curit%25C3%25A9&psig=AOvVaw3EAatXyX30f2I0H3P01UFp&ust=1753562055501000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCYjvDt2I4DFQAAAAAdAAAAABAE'); */
-    /* background-image: url(/images/new/logo_seco_secu.png);
+    /* background-image: url(images/new/logo_seco_secu.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; */
@@ -22162,7 +22179,7 @@ h5.texti {
     margin-top: auto;
     background: #00000028;
     /* background-image: linear-gradient(to top,#000000,transparent); */
-    color: #fff;
+    color: #fbad19;
     padding: 0 20px;
     
 }
@@ -22179,7 +22196,7 @@ h5.texti {
 
 
 .service-card .back .overlay p{
-    color: #fff;
+    color: #fbad19;
     font-size: 12px;
     padding-bottom: 10px;
 }
@@ -22195,7 +22212,9 @@ h5.texti {
     padding-left: 16px !important; */
    
     height: 6000px;
-    background-image: url(/images/new/SECO-Energy-Call-Us-footer.png) !important;
+    background-image: url(/images/new/SECO_Energy_Call_Us_footer.png)  !important;
+    // online background-image: url(/images/new/SECO_Energy_Call_Us_footer.png) url(/secogroupe2.0/images/new/SECO-Energy-Call-Us-footer.png) !important;
+
     /* width: 1000px; */
     position: absolute;
     top: 0;
@@ -22206,7 +22225,7 @@ h5.texti {
      /* transform: scaleY(10) translateY(30%,20%); */
      
     /* 
-    background-image: url('/images/new/SECO-Energy-Call-Us-footer.png'); */
+    background-image: url('./secogroupe2.0/secogroupe2.0/images/new/SECO-Energy-Call-Us-footer.png'); */
 }
 
 .copyright-footer{
@@ -22597,75 +22616,12 @@ h5.texti {
 
 
 /* From Uiverse.io by dzoshi */ 
-.card-4 {
+my-card{
+  display: block;
   position: relative;
+  z-index: 9;
   width: 190px;
-  height: 254px;
-  /* background: linear-gradient(-45deg, #161616 0%, #000000 100%); */
-  background: linear-gradient(-45deg, #e9e9e9 0%, #ffffff 100%);
-  color: #81818196;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding: 14px;
-  gap: 10px;
-  border-radius: 8px;
-  cursor: pointer;
 }
-
-.card-4::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  left: 0;
-  margin: auto;
-  width: 190px;
-  height: 260px;
-  border-radius: 10px;
-  background: linear-gradient(-45deg, #fbad19 0%, #fbad19 40%);
-  z-index: -10;
-  pointer-events: none;
-  transition: all 0.8s cubic-bezier(0.175, 0.95, 0.9, 1.275);
-  box-shadow: 0px 20px 30px hsla(0, 0%, 0%, 0.521);
-}
-
-.card-4::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  width: 165px;
-  height: 245px;
-  background: linear-gradient(-45deg, #1a5cf1 0%, #1a5cf1 100%);
-  transform: translate3d(0, 0, 0) scale(0.45);
-}
-
-.heading {
-  font-size: 20px;
-  text-transform: capitalize;
-  font-weight: 900;
-}
-
-.card-4 p:not(.heading) {
-  font-size: 18px;
-}
-
-.card-4 p:last-child {
-  color: #fbad19;
-  font-weight: 900;
-}
-
-.card-4:hover::after {
-  transition: all 0.2s cubic-bezier(0.175, 0.285, 0.82, 1.275);
-}
-
-.card-4:hover::before {
-  transform: scaleX(1.02) scaleY(1.02);
-  box-shadow: 0px 0px 30px 0px #000000ab;
-}
-
-
-
 /* From Uiverse.io by javierBarroso */ 
 .card-5 {
   width: 190px;
