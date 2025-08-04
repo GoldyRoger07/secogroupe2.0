@@ -12,10 +12,10 @@ export class MyCard {
   version = 1
 
   @Input()
-  title1 = "Title 1"
+  title1 = "Seco Agro Industries"
 
   @Input()
-  title2 = "Title 2"
+  title2 = "Seco Groupe"
 
   @Input()
   cover = ""

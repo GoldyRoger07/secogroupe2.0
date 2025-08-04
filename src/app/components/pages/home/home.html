@@ -27,258 +27,37 @@
                 }
             </h2>
             <div class="services-cards-container" style="margin-bottom: 70px;">
-                
-                <a href="seco_securite.html" class="service-card-container">
-                    <div class="service-card">
-                    <div class="front">
-                        <div class="icon-box">
-                            <i class="fas fa-shield-halved"></i>
-                                <!-- <i class="ri-shield-check-fill"></i> -->
-                        </div>
-                        
-                        <div class="title-box">
-                            <span>Seco Securité</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="top">
-                            <img src="/images/logos/logo_seco_secu.png" alt="logo seco securite">
-                        </div>
-                        <div class="overlay">
-                            <div class="title">
-                                <i class="fas fa-shield-halved"></i>
-                                Seco Securité
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                        </div>
-                    </div>
-                    </div>
-                </a>
-                
-                <a href="seco_tech.html" class="service-card-container">
-                    <div class="service-card">
-                        <div class="front">
-                                <div class="icon-box">
-                                    <i class="fa-solid fa-microchip"></i>
-                                    <!-- <i class="ri-cpu-line"></i> -->
-                                </div>
-                        
-                                <div class="title-box">
-                                        <span>Seco Tech</span>
-                                </div>
-                        </div>
-                        <div class="back">
-                             <div class="top">
-                                <img src="/images/new/logo_seco_tech.png" alt="logo seco tech">
-                            </div>
-                            <div class="overlay">
-                                <div class="title">
-                                    <i class="fa-solid fa-microchip"></i>
-                                    Seco Tech
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </a>
-
-                <a href="seco_distributors.html" class="service-card-container">
-                    <div class="service-card">
+                @for(filiale of filiales; track $index){
+                    <a [routerLink]="['/filiales',pays,filiale.idName]" class="service-card-container">
+                        <div class="service-card">
                         <div class="front">
                             <div class="icon-box">
-                            <!-- <i class="ri-truck-line"></i> -->
-                                <i class="fa-solid fa-truck"></i>
+                                <i [class]="filiale.icon"></i>
+                                    <!-- <i class="ri-shield-check-fill"></i> -->
                             </div>
                             
                             <div class="title-box">
-                                    <span>Seco Distributors</span>
+                                <span>{{filiale.name}}</span>
                             </div>
                         </div>
-
-                        <div class="back">
-                             <div class="top">
-                                <img src="/images/new/logo_seco_distributors.png" alt="logo seco securite">
-                            </div>
-                            <div class="overlay">
-                                <div class="title">
-                                    <i class="fa-solid fa-truck"></i>
-                                    Seco Distributors
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </a>
-
-                <a href="seco_univers_construction.html" class="service-card-container">
-                    <div class="service-card">
-                        <div class="front">
-                            <div class="icon-box">
-                                <i class="fa-solid fa-person-digging"></i>
-                            </div>
-                            
-                            <div class="title-box">
-                                    <span>Seco Univers Construction</span>
-                            </div>
-                        </div>
-                        
-
                         <div class="back">
                             <div class="top">
-                                <img src="/images/new/logo_seco_univers construction.png" alt="logo seco securite">
+                                <img [src]="filiale.logo" alt="logo seco">
                             </div>
                             <div class="overlay">
                                 <div class="title">
-                                    <i class="fa-solid fa-person-digging"></i>
-                                    Seco Univers Construction
+                                    <i [class]="filiale.icon"></i>
+                                    {{filiale.name}}
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
                             </div>
                         </div>
-                        
-                    </div>
-                </a>
-
-                <a href="seco_energy_co.html" class="service-card-container">
-
-                    <div class="service-card">
-
-                        <div class="front">
-                                <div class="icon-box">
-                                    <i class="fa-solid fa-bolt"></i>
-                                </div>
-                                
-                                <div class="title-box">
-                                        <span>Seco Energy CO</span>
-                                </div>
                         </div>
-                        
-
-                        <div class="back">
-                            <div class="overlay">
-                                <div class="title">
-                                    <i class="fa-solid fa-bolt"></i>
-                                    Seco Energy CO
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                </a>
-
-                <a href="seco_agro_industries.html" class="service-card-container">
-                    <div class="service-card">
-                        <div class="front">
-                            <div class="icon-box">
-                                <i class="fa-solid fa-seedling"></i>
-                            </div>
-                            
-                            <div class="title-box">
-                                    <span>Seco Agro-Industries</span>
-                            </div>
-                        </div>
-                        
-
-                        <div class="back">
-                            <div class="top">
-                                <img src="images/logos/seco_agro.png" alt="logo Seco Agro-Industries">
-                            </div>
-                            <div class="overlay">
-                                <div class="title">
-                                    <i class="fa-solid fa-seedling"></i>
-                                    Seco Agro-Industries
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </a>
-
-                <a href="mass_assurance.html" class="service-card-container">
-                    <div class="service-card">
-                        <div class="front">
-                                <div class="icon-box">
-                                    <i class="fas fa-user-shield"></i>
-                                </div>
-                                
-                                <div class="title-box">
-                                        <span>Mass Assurances</span>
-                                </div>
-
-                        </div>
-                        
-                        <div class="back">
-                            <div class="overlay">
-                                <div class="title">
-                                    <i class="fas fa-user-shield"></i>
-                                    Mass Assurances
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </a>
-
-                <a href="mass_funds.html" class="service-card-container">
-
-                    <div class="service-card">
-                        <div class="front">
-                                <div class="icon-box">
-                                    <i class="fa-solid fa-sack-dollar"></i>
-                                </div>
-                                
-                                <div class="title-box">
-                                        <span>Mass Funds</span>
-                                </div>
-                        </div>
-                        
-
-                        <div class="back">
-                            <div class="overlay">
-                                <div class="title">
-                                    <i class="fa-solid fa-sack-dollar"></i>
-                                    Mass Funds
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </a>
-
-                <a href="boyo_airwaves.html" class="service-card-container">
-                    <div class="service-card">
-                    <div class="front">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-plane-departure"></i>
-                                <!-- <i class="ri-shield-check-fill"></i> -->
-                        </div>
-                        
-                        <div class="title-box">
-                            <span>Boyo Airways</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="top">
-                                <img src="images/logos/Boyo Airways.png" alt="logo seco securite">
-                        </div>
-                        <div class="overlay">
-                            <div class="title">
-                                <i class="fa-solid fa-plane-departure"></i>
-                                Boyo Airways
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet ratione obcaecati...</p>
-                        </div>
-                    </div>
-                    </div>
-                </a>
-
+                    </a>
+                }
+                    
+                
+               
             </div>
         </div>
     </section>

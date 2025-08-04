@@ -77,3 +77,362 @@
 }
 
 
+.card1{
+			/* width: 190px; */
+            width: 100%;
+			height: 300px;
+			background: #fff;
+			position: relative;
+			display: flex;
+			place-content: center;
+			place-items: center;
+			overflow: hidden;
+			border-radius: 20px;
+			transition: all 0.3s linear;
+			border: 1px solid #c0c0c0;
+			/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+		}
+
+		.card1:hover{
+			border-color: transparent;
+			box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+		}
+
+		.card1:active{
+			border-color: #c0c0c0;
+			box-shadow: none;
+		}
+
+		.card1:hover .card-body{
+			/* border-color: transparent; */
+		}
+
+		.card1 h4{
+			/* z-index: 1; */
+			color: rgb(54, 54, 54);
+			
+			
+
+		}
+
+		.card1::before{
+			content: '';
+			position: absolute;
+			width: 100px;
+			animation: spinCard 3s linear infinite;
+			transition: all 0.2s linear;
+			
+			height: 300%;
+			
+		}
+
+		.card-body{
+			position: absolute;
+			background: #fff;
+            /* background: transparent; */
+			inset: 5px;
+			border-radius: 15px;
+			display: flex;
+            flex-direction: column;
+			place-content: center;
+			place-items: center;
+            gap: 10px;
+			border: 1px solid #c0c0c0;
+		}
+
+        .card-body p{
+            text-align: center;
+        }
+
+        .card-body i{
+            color: #1a5cf1;
+            font-size: 48px;
+        }
+
+		.card1:hover::before{
+			
+			background-image: linear-gradient(180deg,#1a5cf1 50%,#fbad19 50%);
+		}
+
+		@keyframes spinCard {
+			from{
+				transform: rotate(0deg);
+
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.cards-uiverse{
+	display: grid;
+    grid-template-columns: repeat(auto-fill,190px);
+    gap: 35px;
+}
+.card-2 {
+  position: relative;
+  /* width: 190px; */
+  height: 254px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  /* width: calc(100% + 10px); */
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #1a5cf1 50%, #fbad19 50% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+.card-2::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg,#fbad19 50%,#1a5cf1 50% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  /* filter: blur(10px); */
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card-2 p:not(.heading) {
+  font-size: 14px;
+}
+
+.card-2 p:last-child {
+  color: #1a5cf1;
+  font-weight: 600;
+}
+
+.card-2:hover::after {
+  /* filter: blur(15px); */
+}
+
+.card-2:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+
+/* From Uiverse.io by suleymanlaarabidev */ 
+.card-3 {
+  width: 190px;
+  height: 254px;
+  /* background: #1a5cf1; */
+  background: #fff;
+  transition: all 0.4s;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px 5px #1a5bf1bb; */
+  border: 3px solid #1a5cf1;
+  font-size: 18px;
+  font-weight: 900;
+  
+}
+
+.card-3:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  border: 3px solid #fbad19;
+  /* box-shadow: 0px 0px 10px 5px  #fbac19bd; */
+  /* background: #fbad19; */
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+  color: #1a5cf1;
+}
+
+.card-3:hover .first-content {
+  height: 0px;
+  opacity: 0;
+  
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+  color: #fbad19;
+
+}
+
+.second-content span{
+	text-decoration: underline;
+	text-decoration-color: #1a5cf1;
+}
+
+.first-content span{
+	text-decoration: underline;
+	text-decoration-color: #fbad19;
+}
+
+.card-3:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 18px;
+  transform: rotate(0deg);
+  
+}
+
+
+
+
+/* From Uiverse.io by dzoshi */ 
+/* From Uiverse.io by javierBarroso */ 
+.card-5 {
+  width: 190px;
+  height: 254px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0px 0px 3px 1px #00000088; */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #f2f2f2
+}
+
+.card-5 .content {
+  border-radius: 10px;
+  background: #fff;
+  width: 186px;
+  height: 250px;
+  z-index: 1;
+  padding: 20px;
+  color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: #fff5;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
+}
+
+.card-5:hover .content::before {
+  opacity: 1;
+}
+
+.card-5::before {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 300px;
+  transform: rotate(0deg) translateY(50%);
+  background: linear-gradient(90deg, #1a5cf1, transparent);
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
+}
+.card-5::after {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 300px;
+  transform: rotate(0deg) translateY(-50%);
+  background: linear-gradient(90deg, transparent, #fbad19);
+  transition: opacity 300ms;
+  animation: rotation_9019 3000ms infinite linear;
+  animation-play-state: paused;
+}
+
+.card-5:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+.card-5:hover::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.card-5:hover .glass {
+  opacity: 0;
+}
+
+.glass {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 190px;
+  height: 254px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg) translateY(50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(50%);
+  }
+}
+@keyframes rotation_9019 {
+  0% {
+    transform: rotate(0deg) translateY(-50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(-50%);
+  }
+}
+
+
+

@@ -1,7 +1,10 @@
 @if(version == 4){
     <div class="card-4">
                 <div class="top">
-                        <img [src]="cover" alt="image">
+                        @if(cover!==""){
+                                <img [src]="cover" alt="image">
+                        }
+                        
                 </div>
                 <div class="heading">
                         <span>{{title1}}</span>
@@ -9,4 +12,49 @@
                 </div>
       
     </div>
+}
+
+@if(version === 2){
+        <div class="card-2">
+                    <p class="heading">
+                        {{title1}}
+                    </p>
+                    <p>
+                        Powered By
+                    </p>
+                    <p> Seco Groupe </p>
+        </div>
+}
+
+@if(version === 5){
+        <div class="card-5">
+                    <span class="glass"></span>
+                    <div class="content">
+                        <span>{{title1}}</span>
+                    </div>
+        </div>
+}
+
+@if(version === 3){
+        <div class="card-3">
+                    <div class="first-content">
+                        <span>{{title1}}</span>
+                    </div>
+                    <div class="second-content">
+                        <span>Seco Groupe</span>
+                    </div>
+        </div>
+}
+
+@if(version === 1){
+        <div class="card1">
+                    <div class="card-body">
+                        
+                            <i class="fas fa-business-time"></i>
+                            <h3>{{title1}}</h3>
+                            <p>Nous analysons votre marché pour vous aider à mieux comprendre vos clients et identifier les opportunités stratégiques.</p>
+                       
+
+                    </div>
+	</div>
 }
