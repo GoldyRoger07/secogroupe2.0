@@ -13,7 +13,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './portail.scss'
 })
 export class Portail {
-  pays = ['usa', 'canada', 'haïti', 'bahamas'];
+  pays = ['usa', 'canada', 'haiti', 'bahamas'];
   cardDetails = new CardDetails(4,[
     {
       title: "United States",
