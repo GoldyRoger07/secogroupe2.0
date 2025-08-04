@@ -18,22 +18,22 @@ export class Portail {
     {
       title: "United States",
       description: "Description de la filiale 1",
-      cover: "/images/usa_map.png",
+      cover: "images/usa_map.png",
       link: "/filiale/1"
     },{
       title: "Canada",
       description: "Description de la filiale 1",
-      cover: "/images/canada_map.png",
+      cover: "images/canada_map.png",
       link: "/filiale/1"
     },{
       title: "Haiti",
       description: "Description de la filiale 1",
-      cover: "/images/haiti_map.png",
+      cover: "images/haiti_map.png",
       link: "/filiale/1"
     },{
       title: "Bahamas",
       description: "Description de la filiale 1",
-      cover: "/images/bahamas_map.png",
+      cover: "images/bahamas_map.png",
       link: "/filiale/1"
     }
 
