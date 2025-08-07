@@ -48,10 +48,10 @@ export class EulenSlider implements AfterViewInit{
     let cargarSwiper_seccion_banners1 = () => {
                             var swiper = new Swiper("#swiper_seccion_banners_1 .swiper", {
                                 slidesPerView: 1,
-                                // autoplay: {
-                                //     delay: 5000,
-                                //     disableOnInteraction: true,
-                                // },
+                                autoplay: {
+                                    delay: 5000,
+                                    disableOnInteraction: true,
+                                },
                                 loop: true,
                                 navigation: {
                                     nextEl: "#swiper_seccion_banners_1 .swiper-button-next",
