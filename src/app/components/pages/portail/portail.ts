@@ -5,10 +5,13 @@ import { Footer } from '../../footer/footer';
 import { MyCard } from "../../my-card/my-card";
 import { CardDetails } from '../../../models/CardDetails';
 import { RouterLink } from '@angular/router';
+import { EulenSlider } from "../../eulen/eulen-slider/eulen-slider";
+import { Section1 } from "../../planned/section1/section1";
+import { Section2 } from "../../planned/section2/section2";
 
 @Component({
   selector: 'app-portail',
-  imports: [Banner, Header, Footer, MyCard, RouterLink],
+  imports: [Banner, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2],
   templateUrl: './portail.html',
   styleUrl: './portail.scss'
 })
@@ -39,4 +42,16 @@ export class Portail {
 
     
   ])
+
+  clientsLogo = [
+    "images/clients/brana_logo.png",
+    "images/clients/grand_geneva_logo.jpeg",
+    "images/clients/Grand-Sierra-Resort-Logo.png",
+    "images/clients/Kalahari_Resorts_Horiz_Blue-768x257.avif"
+
+    ,"images/clients/brana_logo.png",
+    "images/clients/grand_geneva_logo.jpeg",
+    "images/clients/Grand-Sierra-Resort-Logo.png",
+    "images/clients/Kalahari_Resorts_Horiz_Blue-768x257.avif"
+  ]
 }

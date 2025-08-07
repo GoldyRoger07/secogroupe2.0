@@ -22026,12 +22026,9 @@ h5.texti {
 }
 
 .hider.scroll-up{
-    
-    
     /* background-color: #00000073; */
     transform: translateY(0);
 }
-
 
 .hider.scroll-down{
     transform: translateY(-100%);
@@ -22349,11 +22346,6 @@ h5.texti {
 }
 
 
-@keyframes txt-move {
-    to{
-
-    }
-}
 
 @media screen and (max-width: 1286px) {
     .wrapper-call-us{

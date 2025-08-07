@@ -15,6 +15,8 @@ export class App {
    constructor(private router: Router) {}
 
   ngOnInit(): void {
+    
+
     this.router.events
       .pipe(
         filter(event => event instanceof NavigationEnd)

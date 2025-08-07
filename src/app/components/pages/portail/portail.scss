@@ -23,30 +23,60 @@ section .cards-flex{
     margin-bottom: 30px;
 }
 
-.client-cards{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    overflow-x: auto;
-    
-    // display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    // justify-content: center;
-    gap: 10px;
+.scroll-wrapper-1 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.scroll-wrapper-1::before{
+    content: "";
+    background-image: linear-gradient(to right, #f1f1f1,transparent );
+    // background: #000;
+    width: 200px;
+    height: 100%;
+    position:absolute;
+    z-index: 4;
+    left: 0;
+    top: 0;
 
 }
 
-.my-client-card{
-    position: relative;
-    padding: 0 !important;
+.scroll-wrapper-1::after{
+    content: "";
+
+    background-image: linear-gradient(to left, #f1f1f1, transparent);
+    width: 200px;
+    height: 100%;
+    position:absolute;
+    z-index: 4;
+    right: 0;
+    top: 0;
+
+}
+
+.scroll-wrapper-1:hover .scroll-track {
+    animation-play-state: paused;
+}
+
+.scroll-track {
     margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    gap: 10px;
+    animation: scroll-left 35s linear infinite;
+}
+
+.my-client-card{
+    
     display: flex;
     justify-content: center;
     align-items: center;;
-    min-width: 230px;
-    width: 230px;
-    height: 300px;
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
     background: #ffffff;
     border-radius: 10px;
     text-align: center;
@@ -56,6 +86,16 @@ section .cards-flex{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
 
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+    
 }
 
 .my-client-card img{

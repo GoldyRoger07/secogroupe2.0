@@ -1,0 +1,29 @@
+.stroke-animation{
+  stroke-dasharray: 1073.2490234375;
+  stroke-dashoffset: 1073.2490234375;
+
+  animation: draw 2s forwards ease-out;
+}
+
+@keyframes draw {
+ 
+    to {
+        // stroke: #4f46e5;
+        // stroke-dasharray: 100%;
+        stroke-dashoffset: 0;
+    }
+}
+
+.fill-animation {
+  fill: transparent;
+  animation: fillIn 2s forwards;
+}
+
+@keyframes fillIn {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #4f46e5; /* Indigo */
+  }
+}
