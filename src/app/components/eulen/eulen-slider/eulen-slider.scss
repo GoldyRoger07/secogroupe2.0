@@ -73,7 +73,10 @@
         .boton_1{width:90%;margin-top:15px;text-align:center;padding:17px 5%;}
         }
         .tipo_2.boton_1{border:1px solid #fff;padding:17px 42px;margin-top:22px;}
-        .tipo_2.boton_1:hover{color:#002664;}
+        .tipo_2.boton_1:hover{
+                // color:#002664;
+                color: var(--my-sec-bg);
+        }
         .tipo_2.boton_1:hover:after{background-color:#fff;height:calc(100% + 2px);bottom:-1px;top:auto;}
         .tipo_2.boton_1:before{display:none;}
         .tipo_2.boton_1:after{background-color:#fff;top:-1px;}
@@ -81,7 +84,10 @@
         .contenedor_slider .swiper-button-next:after,.contenedor_slider .swiper-button-prev:after{display:none;}
         .contenedor_slider .swiper-button-next:hover svg path,.contenedor_slider .swiper-button-prev:hover svg path{fill:#002664;}
         .contenedor_slider .swiper-button-next:hover svg circle,.contenedor_slider .swiper-button-prev:hover svg circle{stroke:#002664;}
-        .contenedor_slider .swiper-button-next.estilo_1:hover svg path,.contenedor_slider .swiper-button-prev.estilo_1:hover svg path{fill:#ed2939;}
+        .contenedor_slider .swiper-button-next.estilo_1:hover svg path,.contenedor_slider .swiper-button-prev.estilo_1:hover svg path{
+                fill:#ed2939;
+                // fill: #fbad19;
+        }
         .contenedor_slider .swiper-button-next.estilo_1:hover svg circle,.contenedor_slider .swiper-button-prev.estilo_1:hover svg circle{stroke:#ed2939;}
         .contenedor_slider .swiper-button-next.estilo_1 svg path,.contenedor_slider .swiper-button-prev.estilo_1 svg path{fill:#002664;}
         .contenedor_slider .swiper-button-next.estilo_1 svg circle,.contenedor_slider .swiper-button-prev.estilo_1 svg circle{stroke:#002664;}
@@ -95,8 +101,19 @@
         .contenedor_slider .paginacion_navegacion .swiper-pagination .swiper-pagination-bullet{width:15px;}
         }
         .contenedor_slider .paginacion_navegacion .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:#ffbac0;}
-        .contenedor_animaciones .animar.ilustracion_comun path{stroke:#00a9e0;stroke-dasharray:1570;stroke-dashoffset:1570;-webkit-transition:all 3s ease-in-out .7s;transition:all 3s ease-in-out .7s;}
-        .contenedor_animaciones.activo .animar.ilustracion_comun path{stroke-dashoffset:0;stroke:#002664;}
+        .contenedor_animaciones .animar.ilustracion_comun path{
+                // stroke:#00a9e0;
+                stroke: #fbac1981;
+                stroke-dasharray:1570;
+                stroke-dashoffset:1570;
+                -webkit-transition:all 3s ease-in-out .7s;
+                transition:all 3s ease-in-out .7s;
+        }
+        .contenedor_animaciones.activo .animar.ilustracion_comun path{
+                stroke-dashoffset:0;
+                // stroke:#002664;
+                stroke: #fbad19;
+        }
         .seccion_banners{padding:120px 0 40px;position:relative;overflow:hidden;}
         @media (max-width:991px){
         .seccion_banners{padding:120px 0 20px;}
@@ -125,10 +142,23 @@
         .seccion_banners .contenedor_svgs svg{left:-140px;}
         }
         .seccion_banners .paginacion_navegacion{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;margin-top:40px;}
-        .contenedor_caja{padding:45px;background-color:rgba(0,38,100,.5);-webkit-transition:all 1s ease-in-out 1.5s;transition:all 1s ease-in-out 1.5s;z-index:1;}
+        
+        .contenedor_caja{
+                padding:45px;
+                // background-color:rgba(0,38,100,.5);
+                background-color: var(--my-sec-bg);
+                // background-color: #fbad19;
+                -webkit-transition:all 1s ease-in-out 1.5s;
+                transition:all 1s ease-in-out 1.5s;
+                z-index:1;
+        }
+
         .contenedor_caja .titulo_sub{line-height:52px;margin:19px 0 0;}
         .contenedor_caja .boton_1{margin-top:18px;width:100%;text-align:center;}
-        .contenedor_animaciones.activo .contenedor_caja{background-color:#002664;}
+        .contenedor_animaciones.activo .contenedor_caja{
+                // background-color:#002664;
+                background-color: #fbad19;
+        }
         /*! CSS Used from: /Comprehensive%20solutions%20and%20Auxiliary%20Services%20-%20EULEN%20Group_files/bootstrap-grid.min.css */
         *,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit;}
         .container{margin-right:auto;margin-left:auto;padding-right:15px;padding-left:15px;}

@@ -8,10 +8,12 @@ import { RouterLink } from '@angular/router';
 import { EulenSlider } from "../../eulen/eulen-slider/eulen-slider";
 import { Section1 } from "../../planned/section1/section1";
 import { Section2 } from "../../planned/section2/section2";
+import { EulenSection1 } from "../../eulen/eulen-section1/eulen-section1";
+import { EulenSection2 } from "../../eulen/eulen-section2/eulen-section2";
 
 @Component({
   selector: 'app-portail',
-  imports: [Banner, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2],
+  imports: [Banner, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2],
   templateUrl: './portail.html',
   styleUrl: './portail.scss'
 })

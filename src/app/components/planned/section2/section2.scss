@@ -17,14 +17,78 @@ h1{font-size:2em;margin:.67em 0;}
 a{background-color:transparent;}
 *,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit;}
 h1{font-family:'SF Pro Display',sans-serif;}
-.btn-request{background:#ba1c0c;color:#fff;padding:16px 32px;border-radius:16px;display:inline-block;text-decoration:none;color:#fff;font-family:"SF Pro Text",sans-serif;font-size:20px;font-size:1.25rem;line-height:32px;font-weight:500;text-align:center;-webkit-transition:.2s linear;transition:all .2s linear;}
-.btn-request:hover{color:#fff;background:#99190b;}
+.btn-request{
+        // background:#ba1c0c;
+        background: var(--my-sec-bg);
+        border: 2px solid var(--my-sec-bg);
+        color:#fff;
+        padding:16px 32px;
+        border-radius:16px;
+        display:inline-block;
+        text-decoration:none;
+        color:#fff;
+        font-family:"SF Pro Text",sans-serif;
+        font-size:20px;
+        font-size:1.25rem;
+        line-height:32px;
+        font-weight:500;
+        text-align:center;
+        -webkit-transition:.2s linear;
+        transition:all .2s linear;
+}
+.btn-request:hover{
+        color: var(--my-sec-bg);
+        // background:#99190b;
+        background: transparent;
+        border: 2px solid var(--my-sec-bg);
+}
 .btn-request:not(.btn-request-2){margin-right:16px;}
 a:focus{outline:0;}
 .hero{background-color:#f8f8f8;background-position:center center;background-repeat:no-repeat;background-size:cover;border-radius:60px;-webkit-border-radius:60px;-moz-border-radius:60px;position:relative;overflow:hidden;height:842px;}
 .hero .hero-body{z-index:2;}
 .hero .hero-body h1.title{color:#fff;font-family:'SF Pro Display';font-size:56px;font-style:normal;font-weight:700;line-height:64px;white-space:pre-line;margin:0;}
 .hero .hero-body .btn-request{margin-top:32px;min-width:300px;}
+
+section.acquiring {
+        position: relative;
+        // border: 4px solid red;
+}
+
+section.acquiring .contenedor_svgs #left-svg{
+        position:absolute;
+        top: 190px;
+        left: 100px;
+        // height: calc(120% + 48px);
+        // height: 1500px;
+        transform: scale(1);
+        // top:-55px;
+        // left:62px;
+        z-index:1;
+        pointer-events:none;
+        // fill: blue;
+}
+
+section.acquiring .contenedor_svgs #right-svg{
+        position:absolute;
+        top: 190px;
+        right: 100px;
+        // height: calc(120% + 48px);
+        // height: 1500px;
+        transform: scale(1.1);
+        // top:-55px;
+        // left:62px;
+        z-index:1;
+        pointer-events:none;
+        // fill: blue;
+}
+@media (max-width:767px){
+        section.acquiring .contenedor_svgs #left-svg{left:-70px;height:108%;}
+}
+@media (max-width:575px){
+        section.acquiring .contenedor_svgs #left-svg{left:-140px;}
+}
+
+
 section.acquiring .hero{background:url("https://www.plannedcompanies.com/wp-content/themes/planned/assets/img/acquiring.png") center center no-repeat;background-size:cover;border-radius:60px;-webkit-border-radius:60px;-moz-border-radius:60px;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;text-align:right;margin-top:128px;height:562px;}
 section.acquiring .hero::before{display:none;}
 section.acquiring .hero .hero-body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;}

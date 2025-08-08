@@ -12,12 +12,12 @@ declare var Swiper: any;
 export class EulenSlider implements AfterViewInit{
   ngAfterViewInit() {
 
-    setTimeout(()=>{
-      const mySection = document.querySelector("#mySection")
+    // setTimeout(()=>{
+    //   const mySection = document.querySelector("#mySection")
 
-      mySection?.classList.toggle("activo")
+    //   mySection?.classList.toggle("activo")
 
-    },5000)
+    // },5000)
     // new Swiper('.swiper', {
     //   loop: true,
     //   pagination: {
@@ -64,6 +64,32 @@ export class EulenSlider implements AfterViewInit{
                         }
 
     cargarSwiper_seccion_banners1()
+
+    // Sélection de l'élément à observer
+    const mySection = document.querySelector("#mySection")
+
+    setInterval(()=> mySection?.classList.toggle("activo"),3700)
+
+    // // Création de l'observer
+    // const observer = new IntersectionObserver((entries) => {
+    //   entries.forEach(entry => {
+    //     if (entry.isIntersecting) {
+    //       console.log('L’élément est visible dans le viewport');
+    //       // Par exemple, tu peux ajouter une classe
+    //       // mySection?.classList.toggle("activo")
+    //       entry.target.classList.add('activo');
+
+    //       // Optionnel : arrêter l'observation si ce n’est plus nécessaire
+    //       observer.unobserve(entry.target);
+    //     }
+    //   });
+    // }, {
+    //   threshold: 0.5 // Déclenchement quand 50% de l'élément est visible
+    // });
+
+    // // Démarrer l'observation
+    // observer.observe(mySection as any);
+
   }
 
 
