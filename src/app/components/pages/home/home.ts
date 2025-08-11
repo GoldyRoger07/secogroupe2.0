@@ -24,7 +24,7 @@ export class Home implements OnInit{
     this.activatedRoute.paramMap.subscribe(params => {
       this.pays = params.get('pays') || "";
 
-      if(!(this.pays === "usa" || this.pays === "canada" || this.pays === "haiti" || this.pays === "bahamas"))
+      if(!(this.pays === "usa" || this.pays === "canada" || this.pays === "haiti" || this.pays === "bahamas" || this.pays === "bresil"))
           this.router.navigate(['/']);
       else
           this.filiales = this.filialeService.getFilialesByPays(this.pays)

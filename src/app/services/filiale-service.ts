@@ -42,6 +42,11 @@ export class FilialeService {
     new FilialePays('haiti','mass_assurance'),
     new FilialePays('haiti','mass_funds'),
     new FilialePays('haiti','seco_univers_construction'),
+    new FilialePays('bresil','seco_distributors'),
+    new FilialePays('bresil','boyo_airways'),
+    new FilialePays('bresil','mass_assurance'),
+    new FilialePays('bresil','mass_funds'),
+    new FilialePays('bresil','seco_univers_construction')
 
   ]
   // document.documentElement.style.setProperty('--body-bg', 'url(https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)')

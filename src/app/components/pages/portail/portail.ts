@@ -19,7 +19,7 @@ import { EulenSection3 } from "../../eulen/eulen-section3/eulen-section3";
   styleUrl: './portail.scss'
 })
 export class Portail {
-  pays = ['usa', 'canada', 'haiti', 'bahamas'];
+  pays = ['usa', 'canada', 'haiti', 'bahamas','bresil'];
   cardDetails = new CardDetails(4,[
     {
       title: "United States",
@@ -40,6 +40,11 @@ export class Portail {
       title: "Bahamas",
       description: "Description de la filiale 1",
       cover: "images/bahamas_map.png",
+      link: "/filiale/1"
+    },{
+      title: "Bresil",
+      description: "Description de la filiale 1",
+      cover: "images/bresil_map.png",
       link: "/filiale/1"
     }
 
