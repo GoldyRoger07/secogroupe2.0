@@ -1,5 +1,8 @@
+
+
 .my-banner{
-    background: url(/images/portailBG.jpg), url(/secogroupe2.0/images/portailBG.jpg) no-repeat center center;
+    --bg-img: url(/images/portailBG.jpg), url(/secogroupe2.0/images/portailBG.jpg);
+    background: var(--bg-img) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100vh;

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './banner.scss'
 })
 export class Banner {
-
+  @Input()
+  imgUrl = "url(/images/portailBG.jpg), url(/secogroupe2.0/images/portailBG.jpg)"
 }
