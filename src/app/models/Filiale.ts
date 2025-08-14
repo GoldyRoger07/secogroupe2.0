@@ -5,7 +5,7 @@ export class Filiale{
         public idName = "",
         public name = "",
         public description = "",
-        public cover = "",
+        public cover: string[] = [],
         public logo = "",
         public logoWhite = "",
         public icon = "",

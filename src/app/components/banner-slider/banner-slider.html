@@ -1,0 +1,19 @@
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+     @for (imgUrl of imgUrls; track $index) {
+        <div class="swiper-slide">
+            <img [src]="imgUrl" alt="slider">
+        </div>
+     }
+
+   
+  </div>
+  <div class="overlay">
+        <ng-content></ng-content>    
+  </div>
+   <!-- If we need navigation buttons -->
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+</div>

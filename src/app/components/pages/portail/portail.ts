@@ -11,10 +11,11 @@ import { Section2 } from "../../planned/section2/section2";
 import { EulenSection1 } from "../../eulen/eulen-section1/eulen-section1";
 import { EulenSection2 } from "../../eulen/eulen-section2/eulen-section2";
 import { EulenSection3 } from "../../eulen/eulen-section3/eulen-section3";
+import { BannerSlider } from "../../banner-slider/banner-slider";
 
 @Component({
   selector: 'app-portail',
-  imports: [Banner, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3],
+  imports: [Banner, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3, BannerSlider],
   templateUrl: './portail.html',
   styleUrl: './portail.scss'
 })

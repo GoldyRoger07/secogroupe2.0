@@ -5,10 +5,11 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FilialeService } from '../../../services/filiale-service';
 import { Filiale } from '../../../models/Filiale';
 import { MyCard } from "../../my-card/my-card";
+import { BannerSlider } from "../../banner-slider/banner-slider";
 
 @Component({
   selector: 'app-filiale-page',
-  imports: [Header, Footer, RouterLink, MyCard],
+  imports: [Header, Footer, RouterLink, MyCard, BannerSlider],
   templateUrl: './filiale-page.html',
   styleUrl: './filiale-page.scss'
 })
