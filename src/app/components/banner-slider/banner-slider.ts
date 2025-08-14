@@ -24,9 +24,10 @@ export class BannerSlider implements AfterViewInit{
         direction: 'horizontal',
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: true
         },
+        effect:'fade'
 
         // If we need pagination
        
