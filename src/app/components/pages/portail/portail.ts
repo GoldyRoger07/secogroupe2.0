@@ -15,7 +15,7 @@ import { BannerSlider } from "../../banner-slider/banner-slider";
 
 @Component({
   selector: 'app-portail',
-  imports: [Banner, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3, BannerSlider],
+  imports: [ Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3, BannerSlider],
   templateUrl: './portail.html',
   styleUrl: './portail.scss'
 })

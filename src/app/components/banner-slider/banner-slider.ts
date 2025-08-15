@@ -19,7 +19,7 @@ export class BannerSlider implements AfterViewInit{
   ]
 
   ngAfterViewInit(): void {
-      const swiper = new Swiper('.swiper', {
+      const swiper1 = new Swiper('#bannerSlider', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
