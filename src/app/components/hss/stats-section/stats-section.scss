@@ -1,0 +1,181 @@
+
+html {
+    font-size: 1px
+}
+
+@media (max-width: 580px) {
+    html {
+        font-size:1px
+    }
+}
+
+@media (min-width: 2560px) {
+    html {
+        font-size:1px
+    }
+}
+
+section.u4m-animated-stats {
+    margin-bottom: 100rem;
+    margin-top: 100rem
+}
+
+section.u4m-animated-stats.reverse-text {
+    color: #fff
+}
+
+section.u4m-animated-stats .heading {
+    float: none;
+    font-family: Gotham A,Gotham B;
+    font-size: 55rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 auto 20rem;
+    max-width: 1400rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    text-align: center
+}
+
+@media (max-width: 580px) {
+    section.u4m-animated-stats .heading {
+        font-size:32rem
+    }
+}
+
+section.u4m-animated-stats .intro {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400rem;
+    padding-left: 20rem;
+    padding-right: 20rem
+}
+
+section.u4m-animated-stats .statistics {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+section.u4m-animated-stats .statistics .statistics__item {
+    align-content: center;
+    background-size: cover;
+    display: grid;
+    flex-grow: 1;
+    justify-content: center;
+    min-height: 500rem;
+    position: relative;
+    text-align: center;
+    width: 25%
+}
+
+@media (max-width: 1024px) {
+    section.u4m-animated-stats .statistics .statistics__item {
+        min-height:300rem;
+        width: 50%
+    }
+}
+
+@media (max-width: 580px) {
+    section.u4m-animated-stats .statistics .statistics__item {
+        width:100%
+    }
+}
+
+section.u4m-animated-stats .statistics .statistics__item:before {
+    background-color: #288dc1;
+    background-color: var(--stat-accent-color);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: var(--stat-opacity);
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+section.u4m-animated-stats .statistics .statistics__item-inner {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    position: relative
+}
+
+section.u4m-animated-stats .statistics .statistics__item-inner>* {
+    margin-bottom: 10rem
+}
+
+section.u4m-animated-stats .statistics .statistics__item .eyebrow {
+    color: #0093c9;
+    color: var(--page-accent-color,#0093c9);
+    color: #fff;
+    display: block;
+    font-family: Gotham A,Gotham B;
+    font-size: 15rem;
+    font-size: 18rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    margin-bottom: 10rem;
+    text-transform: uppercase
+}
+
+section.u4m-animated-stats .statistics .statistics__item .eyebrow .carrot,section.u4m-animated-stats .statistics .statistics__item .eyebrow a {
+    color: #414042
+}
+
+section.u4m-animated-stats .statistics .statistics__item .numscroller {
+    font-family: Gotham A,Gotham B;
+    font-size: 65rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10rem;
+    margin-top: 0;
+    opacity: .8
+}
+
+@media (max-width: 1024px) {
+    section.u4m-animated-stats .statistics .statistics__item .numscroller {
+        font-size:38rem
+    }
+}
+
+section.u4m-animated-stats .statistics .statistics__item .unit {
+    font-size: 30rem;
+    font-weight: 700;
+    padding-left: 5rem;
+    vertical-align: text-bottom
+}
+
+section.u4m-animated-stats .statistics .statistics__item .caption {
+    display: block;
+    font-family: Gotham A,Gotham B;
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 1.875;
+    line-height: 1.4;
+    margin-bottom: 20rem;
+    margin-top: 0;
+    max-width: 23ch
+}
+
+@media (max-width: 580px) {
+    section.u4m-animated-stats .statistics .statistics__item .caption {
+        font-size:15rem
+    }
+}
+
+section.u4m-animated-stats .statistics .statistics__item .overlay {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+section.u4m-animated-stats .statistics .statistics__item a {
+    color: transparent;
+    height: 100%;
+    width: 100%
+}
