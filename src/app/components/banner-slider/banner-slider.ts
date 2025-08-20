@@ -12,9 +12,9 @@ export class BannerSlider implements AfterViewInit{
 
   @Input()
   imgUrls = [
-    'images/portailBG.jpg',
+    // 'images/portailBG.jpg',
     'images/portailBG2.jpg',
-    'images/vecteezy/vecteezy_handshake.jpg'
+    // 'images/vecteezy/vecteezy_handshake.jpg'
 
   ]
 
