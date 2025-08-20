@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
                 <p style="color: #575757ff;">Outsourcing support services with HHS enables you to build a better experience across your facilities and have more time to focus on what you do best.</p>
 
             </div>
-            <svg  class="ilustracion_comun animar"  width="269" height="510" viewBox="0 0 269 510" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg  class="ilustracion_comun animar"  width="168.75" height="318.75" viewBox="0 0 269 510" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="stroke-animation" id="thePath" d="M265 39V4H4V506H264.32V491.071" stroke="#ED2939" stroke-width="8"></path>
             </svg>
         </div>
