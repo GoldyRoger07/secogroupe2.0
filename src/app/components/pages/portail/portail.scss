@@ -37,7 +37,7 @@ section .cards-flex{
 
 .scroll-wrapper-1::before{
     content: "";
-    background-image: linear-gradient(to right, #f1f1f1,transparent );
+    background-image: linear-gradient(to right, #fff,transparent );
     // background: #000;
     width: 200px;
     height: 100%;
@@ -50,8 +50,7 @@ section .cards-flex{
 
 .scroll-wrapper-1::after{
     content: "";
-
-    background-image: linear-gradient(to left, #f1f1f1, transparent);
+    background-image: linear-gradient(to left, #fff, transparent);
     width: 200px;
     height: 100%;
     position:absolute;
@@ -87,7 +86,6 @@ section .cards-flex{
     color: #ffffff;
     font-size: larger;
     font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
 
 }
