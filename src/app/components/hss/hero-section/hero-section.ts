@@ -26,8 +26,8 @@ import { Component } from '@angular/core';
                 </defs>
                 <g style="clip-path:url(#clip-path-right)" id="right" class="start">
                         <image class="double-hero-image-right-03" opacity="0" href="https://f.hubspotusercontent20.net/hubfs/2731727/Website%20Images/What%20We%20Do/what%20we%20do_website_0003_government-IFM-Medical%20Air-20.jpg" width="650" height="671" transform="translate(250 0)"></image>
-                        <image class="double-hero-image-right-02" opacity="0" href="https://f.hubspotusercontent20.net/hubfs/2731727/Website%20Images/What%20We%20Do/what%20we%20do_website_0002_aviation-african%20american%20airport%20staff.jpg" width="650" height="671" transform="translate(250 0)"></image>
-                        <image class="double-hero-image-right-01" href="https://f.hubspotusercontent20.net/hubfs/2731727/Website%20Images/What%20We%20Do/what%20we%20do_website_0007_resorts-Floor%20Tech-8.jpg" width="650" height="671" transform="translate(250 0)"></image>
+                        <image class="double-hero-image-right-02" opacity="0" href="images/services/seco_agent_securite_en_bleu.jpg" width="650" height="671" transform="translate(200 0)"></image>
+                        <image class="double-hero-image-right-01" href="images/services/seco_agent_securite_en_jaune.jpg" width="650" height="671" transform="translate(200 0)"></image>
                 </g>
                 <g style="clip-path:url(#clip-path-left)" id="left" class="start">
                         <image class="double-hero-image-left-03" opacity="0" href="https://f.hubspotusercontent20.net/hubfs/2731727/Website%20Images/What%20We%20Do/what%20we%20do_website_0006_education-0E1A3527-202.jpg" width="650" height="671" transform="translate(-150 0)"></image>
