@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
 
             </div>
             <svg  class="ilustracion_comun animar"  width="168.75" height="318.75" viewBox="0 0 269 510" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="stroke-animation" id="thePath" d="M265 39V4H4V506H264.32V491.071" stroke="#ED2939" stroke-width="8"></path>
+                <path class="stroke-animation" pathLength="1" id="thePath" d="M265 39V4H4V506H264.32V491.071" stroke="#ED2939" stroke-width="8"></path>
             </svg>
         </div>
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="695px" height="671px" viewBox="0 0 695 671" style="border:1px solid transparent;  ">

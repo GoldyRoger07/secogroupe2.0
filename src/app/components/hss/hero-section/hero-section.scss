@@ -37,9 +37,10 @@
 
         .animar.ilustracion_comun path{
                 
-                stroke: rgb(181, 228, 255);
-                stroke-dasharray:1570;
-                stroke-dashoffset:1570;
+                // stroke: rgb(181, 228, 255);
+                stroke: #ffda95;
+                stroke-dasharray:1;
+                stroke-dashoffset:1;
                 animation: bar-animation 3s ease-in-out .7s infinite alternate;
                 /* -webkit-transition:all 3s ease-in-out .7s;
                 transition:all 3s ease-in-out .7s; */
@@ -55,7 +56,8 @@
             to{
                 stroke-dashoffset:0;
                 
-                stroke: rgb(57, 182, 255);
+                // stroke: rgb(57, 182, 255);
+                stroke: var(--my-sec-bg);
             }
         }
 
