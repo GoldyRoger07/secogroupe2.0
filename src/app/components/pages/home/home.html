@@ -8,41 +8,57 @@
              <!-- <button class="btn btn-primary my-4" >START APPLICATION PROCESS</button> -->
               <div class="marquee-container text-box">
                     <div class="marquee ">
-                            Depuis plus de 30 ans, nous accompagnons les entreprises
+                        @if(pays === 'usa' || pays === 'canada' || pays === 'bahamas'){
+                            For more than 15 years, we have been supporting businesses
+                        }@else{
+                            Depuis plus de 15 ans, nous accompagnons les entreprises
+                        }
+                           
                     </div>
               </div>
              
             </div>
-            <h2 style="text-align: center; margin-bottom: 35px; font-weight: bold; color: #383838;">
-                Nos Entreprises disponible 
-                @if(pays === 'usa'){
-                    <span>aux Etats-Unis</span>
-                }@else if(pays === 'canada'){
-                    <span>au Canada</span>
-                }@else if(pays === 'haiti'){
-                    <span>en Haïti</span>
-                }@else if(pays === 'bahamas'){
-                    <span>aux Bahamas</span>
+            @if(pays === 'usa'){
+                <h2 style="text-align: center; margin-bottom: 35px; font-weight: bold; color: #383838;">
+                    Our companies and services
+                </h2>
+            }@else{
+                <h2 style="text-align: center; margin-bottom: 35px; font-weight: bold; color: #383838;">
+                    Nos Entreprises disponible 
+                    @if(pays === 'canada'){
+                        <span>au Canada</span>
+                    }@else if(pays === 'haiti'){
+                        <span>en Haïti</span>
+                    }@else if(pays === 'bahamas'){
+                        <span>aux Bahamas</span>
 
-                }@else if(pays === 'bresil'){
-                    <span>aux Brésil</span>
+                    }@else if(pays === 'bresil'){
+                        <span>aux Brésil</span>
 
-                }
-            </h2>
+                    }
+                </h2>
+            }
             <div class="services-cards-container" style="margin-bottom: 70px;">
                 @for(filiale of filiales; track $index){
                     <a [routerLink]="['/filiales',pays,filiale.idName]" class="service-card-container">
                         <div class="service-card">
                         <div class="front">
                             <div class="icon-box">
-                                <i [class]="filiale.icon"></i>
+                                @if(filiale.details.length>0 && !filiale.icon.includes("fas")){
+                                    <img [src]="filiale.icon" alt="logo" width="128px">
+                                }@else{
+                                    <i [class]="filiale.icon"></i>
+                                }
+                                
                                     <!-- <i class="ri-shield-check-fill"></i> -->
                             </div>
                             
                             <div class="title-box">
-                                <span>{{filiale.name}}</span>
-                                @if(filiale.details.length>0){
-                                    <p>{{filiale.details}}</p>
+                                
+                                @if(filiale.details.length>0 && (pays === 'usa' || pays === 'canada' || pays === 'bahamas')){
+                                    <span>{{filiale.details}}</span>
+                                }@else{
+                                    <span>{{filiale.name}}</span>
                                 }
                             </div>
                         </div>

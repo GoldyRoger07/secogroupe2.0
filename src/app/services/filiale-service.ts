@@ -9,11 +9,12 @@ import { CardDetails } from '../models/CardDetails';
 export class FilialeService {
 
   filiales:Filiale[] = [
-      new Filiale('seco_securite','Seco Securité','','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','fas fa-shield-halved',new CardDetails(2)),
-      new Filiale('optimal_staffing_services','Optimal Staffing Services','Staffing','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','fas fa-shield-halved',new CardDetails(2)),
-      new Filiale('quality_service_hospitality','Quality Service Hospitality','House Keeping','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','fas fa-shield-halved',new CardDetails(2)),
-      new Filiale('concierge_services','Concierge Services','','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','fas fa-shield-halved',new CardDetails(2)),
-      new Filiale('seco_tech','Seco Tech','Building Maintenance','',['images/new/bg_seco_tech.jpg'],'images/logos/seco_tech_logo.png','images/logos/seco_tech_white_logo.png','fa-solid fa-microchip',new CardDetails(3)),
+      new Filiale('seco_securite','Seco Securité','Security','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/security_services.png',new CardDetails(2)),
+      new Filiale('optimal_staffing_services','Optimal Staffing Services','Staffing','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/staffing_services.png',new CardDetails(2)),
+      new Filiale('quality_service_hospitality','Quality Service Hospitality','Housekeeping','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/house_keeping.png',new CardDetails(2)),
+      new Filiale('concierge_services','Concierge Services','Concierge','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/concierges_services.png',new CardDetails(2)),
+      new Filiale('janitorial_services','Janitorial Services','Janitorial','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/janitorial_services.png',new CardDetails(2)),
+      new Filiale('seco_tech','Seco Tech','Building Maintenance','',['images/new/bg_seco_tech.jpg'],'images/logos/seco_tech_logo.png','images/logos/seco_tech_white_logo.png','images/logos/building_maintenance.png',new CardDetails(3)),
       new Filiale('seco_agro_industries','Seco Agro Industries','','',[
         'images/vecteezy/cover_seco_agro.jpg',
         'images/vecteezy/cover_seco_agro1.jpeg',
@@ -44,6 +45,7 @@ export class FilialeService {
     new FilialePays('usa','seco_tech'),
     new FilialePays('usa','optimal_staffing_services'),
     new FilialePays('usa','quality_service_hospitality'),
+    new FilialePays('usa','janitorial_services'),
     new FilialePays('usa','concierge_services'),
     new FilialePays('canada','seco_securite'),
     new FilialePays('canada','seco_tech'),

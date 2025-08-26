@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
     <section class="hero-wrapper">
         <div class="box-wrapper">
             <div class="box">
-                <h1 style="font-size: 60px; font-weight: 900; color: #262626;">Build a Better Experience</h1>
-                <p style="color: #575757ff;">Outsourcing support services with HHS enables you to build a better experience across your facilities and have more time to focus on what you do best.</p>
+                <h1 style="font-size: 60px; font-weight: 900; color: #262626;">Your vision, Our expertise</h1>
+                <p style="color: #575757ff;">Outsourcing support services with SECO to enhance your facilities operations. We provide expert solutions that streamline processes and improve service quality.</p>
 
             </div>
             <svg  class="ilustracion_comun animar"  width="168.75" height="318.75" viewBox="0 0 269 510" fill="none" xmlns="http://www.w3.org/2000/svg">
