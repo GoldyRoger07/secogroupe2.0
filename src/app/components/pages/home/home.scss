@@ -1,0 +1,11 @@
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.title-box p{
+    color: var(--my-sec-bg);
+    font-size: 14px;
+}

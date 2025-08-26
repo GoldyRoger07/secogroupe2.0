@@ -41,6 +41,9 @@
                             
                             <div class="title-box">
                                 <span>{{filiale.name}}</span>
+                                @if(filiale.details.length>0){
+                                    <p>{{filiale.details}}</p>
+                                }
                             </div>
                         </div>
                         <div class="back">

@@ -4,6 +4,7 @@ export class Filiale{
     constructor(
         public idName = "",
         public name = "",
+        public details = "",
         public description = "",
         public cover: string[] = [],
         public logo = "",
