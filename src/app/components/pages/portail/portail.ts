@@ -13,14 +13,20 @@ import { EulenSection2 } from "../../eulen/eulen-section2/eulen-section2";
 import { EulenSection3 } from "../../eulen/eulen-section3/eulen-section3";
 import { BannerSlider } from "../../banner-slider/banner-slider";
 import { HeroSection } from "../../hss/hero-section/hero-section";
+import { LanguageService } from '../../../services/language-service';
+import { Observable } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-portail',
-  imports: [Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3, BannerSlider, HeroSection],
+  imports: [CommonModule,Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3, BannerSlider, HeroSection],
   templateUrl: './portail.html',
   styleUrl: './portail.scss'
 })
 export class Portail {
+
+  currentLanguage$!: Observable<string>
+   
   pays = ['usa', 'canada', 'haiti', 'bahamas','bresil'];
   cardDetails = new CardDetails(4,[
     {
@@ -84,4 +90,12 @@ export class Portail {
     "images/clients/logo_marriott.png",
     "images/clients/logo_monarch_resort.png",
   ]
+
+  constructor(private languageService:LanguageService){
+    this.currentLanguage$ = languageService.currentLanguage$
+  }
+
+  translate(currentLanguage:string,language1:string,language2:string){
+    return this.languageService.translate(currentLanguage,language1,language2)
+  }
 }

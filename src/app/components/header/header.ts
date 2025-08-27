@@ -1,10 +1,13 @@
 import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LanguageService } from '../../services/language-service';
+import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink,RouterLinkActive],
+  imports: [RouterLink,RouterLinkActive,CommonModule],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
@@ -13,12 +16,15 @@ export class Header implements AfterViewInit{
   @ViewChild("siteHeader")
   siteHeader!: ElementRef
 
+
   @Input()
   menuAutoHide = true
 
-  
+  currentLanguage$!: Observable<string>
 
-  constructor(private languageService:LanguageService){}
+  constructor(private languageService:LanguageService){
+    this.currentLanguage$ = languageService.currentLanguage$
+  }
 
   ngAfterViewInit(): void {
     if(!this.menuAutoHide) return
@@ -48,7 +54,12 @@ export class Header implements AfterViewInit{
   }
 
   onSelect($event: Event) {
-    console.log($event)
+     const value = ($event.target as HTMLSelectElement).value;
+     this.languageService.updateCurrentLanguage(value)
+  }
+
+  translate(currentLanguage:string,language1:string,language2:string){
+    return this.languageService.translate(currentLanguage,language1,language2)
   }
 
 }

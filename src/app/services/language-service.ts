@@ -12,4 +12,8 @@ export class LanguageService {
   updateCurrentLanguage(language:string){
     this.currentLanguageSource$.next(language)
   }
+
+  translate(currentLanguage:string,language1:string,language2:string){
+    return currentLanguage === 'eng'?language1:language2
+  }
 }

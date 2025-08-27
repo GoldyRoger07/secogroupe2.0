@@ -9,3 +9,73 @@
     color: var(--my-sec-bg);
     font-size: 14px;
 }
+
+.wrapper{
+    margin-top: 120px;
+    width: 100%;
+    max-height: calc(100vh - 100px);
+    border-radius: 25px;
+    background-image: url(/images/meeting1.jpeg);
+    overflow: hidden;
+    // border-radius: 
+}
+
+.wrapper .overlay{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 288px 96px;
+    height: 100%;
+    width: 100%;
+    background: #00000073;
+    
+}
+
+.wrapper h1{
+    font-size: 40px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    line-height: 64px;
+    white-space: pre-line;
+    color: #fff;
+}
+
+.wrapper .my-buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper .my-buttons button{
+    padding: 16px 32px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.wrapper .my-buttons button:nth-child(1){
+    background: var(--my-sec-bg);
+    border: 2px solid var(--my-sec-bg);
+    color: #fff;
+}
+
+.wrapper .my-buttons button:nth-child(2){
+    background: #fff;
+    border: 2px solid var(--my-sec-bg);
+    color:  var(--my-sec-bg);
+}
+
+
+.wrapper .my-buttons button:nth-child(1):hover{
+    background: var(--my-hover-sec-bg);
+    border: 2px solid var(--my-sec-bg);
+    color: #fff;
+}
+
+.wrapper .my-buttons button:nth-child(2):hover{
+    background: #efefef;
+    border: 2px solid var(--my-sec-bg);
+    color:  var(--my-sec-bg);
+}

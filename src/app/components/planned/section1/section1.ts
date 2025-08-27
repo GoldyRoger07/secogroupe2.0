@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-section1',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './section1.scss'
 })
 export class Section1 {
-
+    @Input()
+    version = 1
 }

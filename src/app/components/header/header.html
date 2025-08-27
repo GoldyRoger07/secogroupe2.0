@@ -1,4 +1,5 @@
 <header #siteHeader id="site-header" class="hider">
+    @let currentLanguage = (currentLanguage$ | async)  || '';
         <div class="container" >
             <nav class="navbar navbar-expand-lg navbar-light" #nav >
                 <a class="navbar-brand" href="index.html">
@@ -14,10 +15,10 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+                            <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">{{translate(currentLanguage ,'Home','Accueil')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" routerLink="/a-propos">About Us</a>
+                            <a class="nav-link" routerLinkActive="active" routerLink="/a-propos">{{translate(currentLanguage ,'About Us','A propos')}}</a>
                         </li>
                      
                         <!-- <li class="nav-item dropdown">
@@ -42,7 +43,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Subsidiaries <i class="fas fa-angle-down"></i>
+                                 {{translate(currentLanguage ,'Services','Services')}} <i class="fas fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-2" aria-labelledby="navbarScrollingDropdown">
                                 <li><a class="dropdown-item" routerLink="/filiales/usa">USA</a></li>
@@ -61,10 +62,12 @@
                         </li>
 
                         <li class="nav-item" >
-                            <select class="form-select" id="lang-select" (valueChanges)="onSelect($event)" style="border:none;outline:none; background-color: #fff; color: #000; font-weight: bold; ">
+                            <select class="form-select" (change)="onSelect($event)" #idSelect style="border:none;outline:none; background-color: #fff; color: #000; font-weight: bold; ">
                                 
-                                <option value="eng" selected>English </option>
-                                <option value="fr">French</option>
+                                <option value="eng" selected>
+                                    {{translate(currentLanguage ,'English','Anglais')}}
+                                </option>
+                                <option value="fr">{{translate(currentLanguage ,'French','Français')}}</option>
                                
                             </select>
                             

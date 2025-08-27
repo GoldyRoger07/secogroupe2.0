@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 // import function to register Swiper custom elements
 
 declare var Swiper: any;
@@ -10,6 +10,14 @@ declare var Swiper: any;
   styleUrl: './eulen-slider.scss'
 })
 export class EulenSlider implements AfterViewInit{
+
+  @Input()
+  imgUrls = [
+    'uploads/sites/2/2023/01/sostenibilidad-1.jpg',
+    'uploads/sites/2/2022/11/idi.jpg',
+    'uploads/sites/2/2023/01/banner-personas.png'
+  ]
+
   ngAfterViewInit() {
 
     // setTimeout(()=>{
