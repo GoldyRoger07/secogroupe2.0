@@ -53,11 +53,27 @@
                             </ul>
 
                         </li>
+
+
                         
                         <li class="nav-item">
                             <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact</a>
                         </li>
+
+                        <li class="nav-item" >
+                            <select class="form-select" id="lang-select" (valueChanges)="onSelect($event)" style="border:none;outline:none; background-color: #fff; color: #000; font-weight: bold; ">
+                                
+                                <option value="eng" selected>English </option>
+                                <option value="fr">French</option>
+                               
+                            </select>
+                            
+                        </li>
+
+                        
                     </ul>
+
+                    
                    
                 </div>
                

@@ -1,0 +1,12 @@
+.form-select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  border-color: #ffffff; /* la couleur par défaut Bootstrap */
+  font-size: 15px;
+}
+
+.form-select{
+    padding-top: 0;
+    padding-bottom: 0;
+}

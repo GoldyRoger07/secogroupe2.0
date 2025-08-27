@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { LanguageService } from '../../services/language-service';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +9,16 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.scss'
 })
 export class Header implements AfterViewInit{
-  
 
   @ViewChild("siteHeader")
   siteHeader!: ElementRef
 
   @Input()
   menuAutoHide = true
+
+  
+
+  constructor(private languageService:LanguageService){}
 
   ngAfterViewInit(): void {
     if(!this.menuAutoHide) return
@@ -41,6 +45,10 @@ export class Header implements AfterViewInit{
 
 
     })
+  }
+
+  onSelect($event: Event) {
+    console.log($event)
   }
 
 }
