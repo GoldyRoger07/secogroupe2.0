@@ -4,7 +4,13 @@
             <div class="wrapper">
                <div class="overlay">
                     <div>
-                        <h1>Housekeeping, Building Maintenance, Janitorial, Staffing, Concierge & Security Experts</h1>
+                        <h1>
+                            @if(pays === 'usa' || pays === 'canada' || pays === 'bahamas'){
+                                Housekeeping, Building Maintenance, Janitorial, Staffing, Concierge & Security Experts
+                            }@else{
+                                Seco Security, Seco Tech, Seco Agro Industries Etc
+                            }
+                        </h1>
                         <div class="my-buttons">
                             <button>Request a quote</button>
                             <button>Request a work order</button>
@@ -118,5 +124,5 @@
           
     </section> 
     
-    <map-section></map-section>
+    <map-section [map]="pays"></map-section>
 <app-footer/>
