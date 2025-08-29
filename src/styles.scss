@@ -22081,7 +22081,8 @@ h5.texti {
     position: relative;
     transition: transform 800ms;
     transform-style: preserve-3d;
-}
+    
+  }
 
 
 
@@ -22092,13 +22093,17 @@ h5.texti {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
 }
 
 
 .service-card .front{
 
-    background: #f1f1f1;
-    border-radius: 10px;
+    // background: #f1f1f1;
+    
     /* background-image: url(images/new/bg_card_services_3.jpg); */
     /* background-position: center;
     background-size: cover;
@@ -22118,8 +22123,8 @@ h5.texti {
 
 .service-card .back{
     /* background:#434343; */
-    background: #f1f1f1;
-    border-radius: 10px;
+    // background: #f1f1f1;
+    
     transform: rotateY(180deg);
     /* background-image: url(images/new/bg_card_services_3.jpg);
     background-position: center;
