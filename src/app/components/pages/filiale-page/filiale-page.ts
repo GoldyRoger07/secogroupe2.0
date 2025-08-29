@@ -6,10 +6,11 @@ import { FilialeService } from '../../../services/filiale-service';
 import { Filiale } from '../../../models/Filiale';
 import { MyCard } from "../../my-card/my-card";
 import { BannerSlider } from "../../banner-slider/banner-slider";
+import { ContactSection } from "../../eulen/contact-section/contact-section";
 
 @Component({
   selector: 'app-filiale-page',
-  imports: [Header, Footer, RouterLink, MyCard, BannerSlider],
+  imports: [Header, Footer, RouterLink, MyCard, BannerSlider, ContactSection],
   templateUrl: './filiale-page.html',
   styleUrl: './filiale-page.scss'
 })
