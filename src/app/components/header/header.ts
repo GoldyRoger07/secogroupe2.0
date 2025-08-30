@@ -18,7 +18,7 @@ export class Header implements AfterViewInit{
 
 
   @Input()
-  menuAutoHide = true
+  menuAutoHide = false
 
   currentLanguage$!: Observable<string>
 

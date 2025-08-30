@@ -1,1 +1,25 @@
-<p>our-clients-section works!</p>
+<div>
+                <h2  style="font-weight: bold; text-align: center; margin-top: 30px;">Our Clients</h2>
+                <!-- <p>Lorem ipsum sicing elit. Molestiaeniet maiores sunt nescitium labore deserunt dolorum voluptatem earum at corrupti!</p> -->
+
+</div>
+<div class="scroll-wrapper-1">
+                        <div class="scroll-track">
+                            @for(clientLogo of clientsLogo; track $index){
+                                <div class="my-client-card">
+                                    <img [src]="clientLogo" alt="team worker">
+                                </div>
+                            }
+
+                        </div>
+                        <div class="scroll-track">
+                            @for(clientLogo of clientsLogo; track $index){
+                                <div class="my-client-card">
+                                    <img [src]="clientLogo" alt="team worker">
+                                </div>
+                            }
+
+                        </div>
+                        
+                        
+</div>

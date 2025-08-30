@@ -6,18 +6,18 @@
 
 .text-wrapper{
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         // flex-direction: column;
        
 }
 
-.text-wrapper div{
-        max-width: 800px;
-        margin:0 auto;
+.text-wrapper div:nth-child(1){
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap:20px;
 }
+
+
 
 //         /*! CSS Used from: Embedded */
 // .wp-block-group{box-sizing:border-box;}
@@ -52,7 +52,7 @@
         text-align:center;
         -webkit-transition:.2s linear;
         transition:all .2s linear;
-        margin: auto;
+        // margin: auto;
         margin-top: 20px;
 }
 .btn-request:hover{

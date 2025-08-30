@@ -1,6 +1,6 @@
 <app-header [menuAutoHide]="false"/>
     <!-- <app-banner imgUrl="url(/images/vecteezy/vecteezy_handshake.jpg), url(/secogroupe2.0/images/vecteezy/vecteezy_handshake.jpg)"/> -->
-   @let currentLanguage = (currentLanguage$ | async)  || '';
+   <!-- @let currentLanguage = (currentLanguage$ | async)  || ''; -->
 <div style="margin-top: 70px;">
     <hss-hero-section/>
 </div>
@@ -32,43 +32,6 @@
 
     <app-section2></app-section2>
 
-    
-
-    <section class="w3l-contact-info-main py-5" id="contact" >
-        <div class="container pt-lg-5 pt-md-4 pt-2">
-            <!-- <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:700px;">
-               
-                
-            </div> -->
-            <div class="row">
-                <div class="col-lg-6 about-2-secs-right mb-lg-0 mb-5">
-                    <img src="images/img2.jpg" alt="" class="img-fluid radius-image" />
-                     <!-- <img src="assets/images/new/image10.jpg" alt="" class="img-fluid radius-image" /> -->
-                </div>
-                <div class="col-md-6  ps-md-4 mt-md-0 mt-2 " style="background: rgb(245, 245, 245); padding: 20px; border-radius: 10px; ">
-                    <h3 class="title-style mb-4" style="color: #242424;">We Are Hiring</h3>
-                    <form  class="w3layouts-contact-fm" action="https://formsubmit.co/latouche822@gmail.com" method="POST">
-                        <div class="form-group mb-3">
-                            <input class="form-control" type="text" name="w3lName" id="w3lName" placeholder="Your Name"
-                                required="">
-                        </div>
-                        <div class="form-group mb-3">
-                            <input class="form-control" type="email" name="w3lSender" id="w3lSender"
-                                placeholder="Votre Email" required="">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="w3lMessage" id="w3lMessage" placeholder="Ecrivez un message"
-                                required=""></textarea>
-                        </div>
-                        <div class="form-group-2 mt-3 text-start">
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <eulen-section1></eulen-section1>
 
     <eulen-section2></eulen-section2>
@@ -81,31 +44,7 @@
 
    <!-- testimonials section -->
     <section class="pb-5 pt-2" >
-        <div>
-                <h2 class="mb-5">Our Clients</h2>
-                <!-- <p>Lorem ipsum sicing elit. Molestiaeniet maiores sunt nescitium labore deserunt dolorum voluptatem earum at corrupti!</p> -->
-
-        </div>
-        <div class="scroll-wrapper-1">
-                        <div class="scroll-track">
-                            @for(clientLogo of clientsLogo; track $index){
-                                <div class="my-client-card">
-                                    <img [src]="clientLogo" alt="team worker">
-                                </div>
-                            }
-
-                        </div>
-                        <div class="scroll-track">
-                            @for(clientLogo of clientsLogo; track $index){
-                                <div class="my-client-card">
-                                    <img [src]="clientLogo" alt="team worker">
-                                </div>
-                            }
-
-                        </div>
-                        
-                        
-            </div>
+        <our-clients-section/>
     </section>
 
    

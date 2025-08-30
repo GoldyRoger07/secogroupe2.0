@@ -17,10 +17,11 @@ import { LanguageService } from '../../../services/language-service';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { ContactSection } from "../../eulen/contact-section/contact-section";
+import { OurClientsSection } from "../../our-clients-section/our-clients-section";
 
 @Component({
   selector: 'app-portail',
-  imports: [CommonModule, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3, BannerSlider, HeroSection, ContactSection],
+  imports: [CommonModule, Header, Footer, MyCard, RouterLink, EulenSlider, Section1, Section2, EulenSection1, EulenSection2, EulenSection3, BannerSlider, HeroSection, ContactSection, OurClientsSection],
   templateUrl: './portail.html',
   styleUrl: './portail.scss'
 })

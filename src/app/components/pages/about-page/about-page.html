@@ -1,10 +1,20 @@
  <app-header/>
 
  <banner-slider>
-        <div style="width: 100%; height: 100%; display: flex; align-items: center; flex-direction: column; justify-content: center; gap: 10px;">
-            <!-- <img src="images/seco_bell.png" style="width: 100px;" alt="logo"> -->
-            <p style="color: #fff; font-size: x-large; text-shadow: 2px 2px 4px rgba(32, 32, 32, 0.5);">Votre partenaire de confiance pour le succès entrepreneurial</p>
-
+         <div style="display: flex; align-items: center; height: 100%;">
+            <div class="container" >
+            <div class="w3l-breadcrumb py-lg-5" style="background: transparent !important;">
+                <div class="container pt-5 pb-sm-4">
+                    <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4" style="font-size: 40px;" id="big-service-title">About Us</h4>
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a [routerLink]="['/']">Accueil</a></li>
+                        <li class="active"><i class="fas fa-angle-right mx-2"></i>
+                            <span id="title-service-active">About Us</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         </div>
 </banner-slider>
 
@@ -30,137 +40,64 @@
  
 </div>
 
- <!-- about section -->
-    <section class="w3l-about-2 py-5">
-        <div class="container py-md-5 py-4">
-            <div class="row align-items-center">
-                <div class="col-lg-6 about-2-secs-left">
-                    <h5 class="small-title mb-2">A propos de nous </h5>
-                    <h3 class="title-style mb-2">Nous façonnons vos idées uniques en stratégie d’entreprise.</h3>
-                    <p>Chez Seco Groupe, nous mettons notre expertise au service de vos projets, en vous proposant une large gamme de services adaptés à vos besoins. De la planification à l'exécution, nous vous accompagnons avec sérieux, innovation et efficacité. Notre mission : vous offrir des solutions fiables, durables et orientées vers la réussite.</p>
-                    <!-- <ul class="list-about-2 mt-sm-4 mt-3">
-                        <li class="py-1"><i class="far fa-check-square"></i>Ut enim ad minim
-                            veniam</li>
-                        <li class="py-2"><i class="far fa-check-square"></i>Quis nostrud
-                            exercitation
-                            ullamco
-                            laboris</li>
-                    </ul> -->
-                    <a class="btn btn-style mt-lg-5 mt-4" href="index.html#services">Voir Nos Services</a>
-                </div>
-                <div class="col-lg-6 about-2-secs-right mt-lg-4 mt-5" >
-                    <div style="background: #e6e6e6; width: 100%; height: 400px; border-radius: 15px;"></div>
-                    <!-- <img src="images/about.jpg" alt="about image" class="img-fluid radius-image" /> -->
-                    <!-- <img src="images/new/image8.jpg" alt="about image" class="img-fluid radius-image" /> -->
-                </div>
+<section>
+    <div class="container">
+        <div class="wrapper">
+            <div class="left" style="padding-right: 20px;">
+                <h2 style="font-size: 35px; font-weight: bold;">Our Mission</h2>
+                <p>
+                    Our mission to establish ourselves as a reliable
+                    service partner for businesses and
+                    communities in the regions where we operate, 
+                    making a significant contribution to global development.
+                </p>
+                <button class="cta-btn"> Our Services </button>
+            </div>
+            <div class="right">
+                <img src="images/blog1.jpg" alt="image">
             </div>
         </div>
-    </section>
-    <!-- //about section -->
+    </div>
+</section>
 
-    <section style="height: 80vh;">
-        <div class="container">
-            
-                <div class="about-wrapper" style="display: flex; gap: 30px;">
-                    <img style="width: 50%; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" src="https://www.hhs1.com/hs-fs/hubfs/Website%20Images/About%20Us/about%20us_website_alternating%20content_0000_how%20we%20started.jpg?width=540&name=about%20us_website_alternating%20content_0000_how%20we%20started.jpg" alt="image">
-                    <div class="content-wrapper" style="color: #646464; font-size: 18px;">
-                        <h2 style="font-size: 35px; margin-bottom: 10px;">How We Started</h2>
-                        <p >
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                             Sint velit fugiat reiciendis! Eum, eius aspernatur 
-                             
-                        </p>
+<section>
+    <div class="container">
+        <div class="wrapper">
+            <div class="left">
+                 <img src="images/blog2.jpg" alt="image">
+            </div>
+            <div class="right" style="padding: 20px;">
+                 <h2 style="font-size: 35px; font-weight: bold;">Our Vision</h2>
+                <p>
+                    Driven by our core values,
+                    we are committed to enriching
+                    people's lives and exceeding our stakeholder's
+                    expectations as a provider of comprehensive assistance services
+                </p>
+                <button class="cta-btn"> Contact Us </button>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                             Sint velit fugiat reiciendis! Eum, eius aspernatur 
-                             laudantium nostrum, voluptas in aperiam molestias unde
-                              aliquid pariatur ex dolorem minus, iusto odit minima!
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                             Sint velit fugiat reiciendis! Eum, eius aspernatur 
-                             laudantium nostrum, voluptas in aperiam molestias unde
-                              aliquid pariatur ex dolorem minus, iusto odit minima!
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                             Sint velit fugiat reiciendis! Eum, eius aspernatur 
-                             laudantium nostrum, voluptas in aperiam molestias unde
-                              aliquid pariatur ex dolorem minus, iusto odit minima!
-                        </p>
-                    </div>
-                </div>
-
-                
-            
-        </div>
-    </section>
-
-    <section style="height: 80vh;">
-        <div class="container">
-            <div class="about-wrapper" style="display: flex; gap: 30px;">
-                    <div class="content-wrapper" style="color: #646464; font-size: 18px;">
-                        <h2 style="font-size: 35px; margin-bottom: 10px;">History of Growth</h2>
-                        <p >
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                             Sint velit fugiat reiciendis! Eum, eius aspernatur 
-                             
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                             Sint velit fugiat reiciendis! Eum, eius aspernatur 
-                             laudantium nostrum, voluptas in aperiam molestias unde
-                              aliquid pariatur ex dolorem minus, iusto odit minima!
-                        </p>
-
-                        
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                             Sint velit fugiat reiciendis! Eum, eius aspernatur 
-                             laudantium nostrum, voluptas in aperiam molestias unde
-                              aliquid pariatur ex dolorem minus, iusto odit minima!
-                        </p>
-                    </div>
-                    <img style="width: 50%; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" src="https://www.hhs1.com/hs-fs/hubfs/Website%20Images/About%20Us/about%20us_website_alternating%20content_0001_history%20of%20growth.jpg?width=540&name=about%20us_website_alternating%20content_0001_history%20of%20growth.jpg" alt="image">
-                    
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-
-<div style="margin: 8px auto; display: block; text-align:center;">
-    <section class="w3l-about-2 py-5">
-        <div class="container py-md-5 py-4">
-            <div class="row align-items-center">
-                <div class="col-lg-12 about-2-secs-left">
-                    <!-- <h5 class="small-title mb-2">A propos de nous</h5> -->
-                    <h3 class="title-style mb-2">Notre Histoire.</h3>
+<section style="margin: 7ch 0;">
+    <div class="container">
+        <div>
+            <h3 class="title-style mb-3">Notre Histoire.</h3>
                     <p class="mb-2">Depuis sa création en 2010 en Louisiane, SECO GROUPE, dirigé par l’entrepreneur et philanthrope Michelet Nestor, a connu une croissance constante, élargissant ses activités aux États-Unis et en Haïti. En tant que groupe haïtien regroupant plusieurs filiales, SECO GROUPE propose une gamme variée de services à travers ses sept entités : SECO Sécurité, Seco Tech, Seco Distributors, Seco Univers Construction, SECO Line, Mass International et Seco Agro-Industries.</p>
                     <p class="mb-2">Sous la direction de Michelet Nestor, SECO GROUPE ne se limite pas à offrir des services de haute qualité dans des domaines tels que la sécurité, la logistique, la construction, la transformation agricole et la technologie. Michelet Nestor s’engage également à soutenir le développement économique et social en Haïti à travers des initiatives concrètes. En plus de créer des emplois pour des milliers d’Haïtiens dans un contexte économique difficile, où de nombreuses entreprises ferment leurs portes, SECO GROUPE permet à des entreprises locales de bénéficier de solutions adaptées et de maintenir leur compétitivité.</p>
                     <p class="mb-4">Michelet Nestor incarne son engagement philanthropique au travers de la Fondation Nestor, qui œuvre pour améliorer les conditions de vie des communautés en Haïti. La Fondation Nestor soutient divers projets d’éducation, de santé, et de développement communautaire, contribuant ainsi à offrir un avenir meilleur aux familles haïtiennes et à renforcer la résilience de la population face aux défis socio-économiques.</p>
                     <p>Grâce à l’expertise de plus de 500 employés dévoués et à une direction cumulant plus de 30 ans d’expérience, SECO GROUPE et la Fondation Nestor s’allient pour promouvoir la prospérité en Haïti et améliorer la vie de ses habitants.</p>
-                    <!-- <ul class="list-about-2 mt-sm-4 mt-3">
-                        <li class="py-1"><i class="far fa-check-square"></i>Ut enim ad minim
-                            veniam</li>
-                        <li class="py-2"><i class="far fa-check-square"></i>Quis nostrud
-                            exercitation
-                            ullamco
-                            laboris</li>
-                    </ul> -->
-                    <!-- <a class="btn btn-style mt-lg-5 mt-4" href="services.html">Voir Nos Services</a> -->
-                </div>
-                <!-- <div class="col-lg-6 about-2-secs-right mt-lg-4 mt-5">
-                    <img src="assetsimages/about.jpg" alt="" class="img-fluid radius-image" />
-                </div> -->
-            </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
+<eulen-contact-section></eulen-contact-section>
+
+<section class="pb-5 pt-2" >
+        <our-clients-section/>
+</section>
 
 
     <!-- features section -->
@@ -205,11 +142,6 @@
         </div>
     </section> -->
     <!-- //features section -->
-<div style="margin: 8px auto; display: block; text-align:center;">
-
-<!---728x90--->
- 
-</div>
 
 
 <app-footer/>
