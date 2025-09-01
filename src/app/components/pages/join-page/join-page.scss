@@ -2,3 +2,81 @@
     padding: 16px 32px;
     font-weight: bold;
 }
+
+.join-cards{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.join-card{
+    position: relative;
+    padding: 40px 20px; 
+    border-radius: 8px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;;
+    
+}
+
+.join-card::after{
+    content:"";
+    position: absolute;
+    z-index: 1;
+    background-size: cover; 
+    background-position: center; 
+    transition: all .3s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.join-card:hover::after{
+    transform: scale(1.2);
+    
+}
+
+
+.join-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 39, 146, 0.514);
+    border-radius: 8px;
+    z-index: 2;
+    transition: all .3s ease;
+}
+
+.join-card:hover::before{
+    background: rgba(0, 39, 146, 0.74);
+}
+
+.join-card h4{
+    z-index: 3;
+    margin: 0; 
+    font-weight: bold;
+    color: #fff;
+}
+
+.join-card:nth-child(1)::after{
+    background-image: url('https://plus.unsplash.com/premium_photo-1661878265739-da90bc1af051?q=80&w=786&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+} 
+
+.join-card:nth-child(2)::after{
+    background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+} 
+
+.join-card:nth-child(4)::after{
+    background-image: url('https://plus.unsplash.com/premium_photo-1681823920434-23ae8866ab82?q=80&w=1058&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+} 
+
+.join-card:nth-child(3)::after{
+    background-image: url('https://plus.unsplash.com/premium_photo-1679920025550-75324e59680f?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+} 
