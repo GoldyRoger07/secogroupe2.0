@@ -48,6 +48,27 @@ Author URL: http://w3layouts.com
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cta-btn{
+    padding: 8px 16px;
+    background: var(--my-sec-bg);
+    color: #fff;
+    border: 2px solid var(--my-sec-bg);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.cta-btn:hover{
+  background: transparent;
+  color: var(--my-sec-bg);
+}
+
+
+body{
+  width: 100%
 }
 
 @media (prefers-reduced-motion: no-preference) {
