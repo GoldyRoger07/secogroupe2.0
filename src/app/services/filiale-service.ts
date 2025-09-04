@@ -2,19 +2,60 @@ import { Injectable } from '@angular/core';
 import { Filiale } from '../models/Filiale';
 import { FilialePays } from '../models/FilialePays';
 import { CardDetails } from '../models/CardDetails';
+import { FilialeDetails } from '../models/FilialeDetails';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FilialeService {
 
+  filialeDetails: FilialeDetails[] = [{
+    title: 'A simple title',
+    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  }]
+
   filiales:Filiale[] = [
-      new Filiale('seco_securite','Seco Securité','Security','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/security_services.png',new CardDetails(2)),
-      new Filiale('optimal_staffing_services','Optimal Staffing Services','Staffing','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/staffing_services.png',new CardDetails(2)),
-      new Filiale('quality_service_hospitality','Quality Service Hospitality','Housekeeping','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/house_keeping.png',new CardDetails(2)),
-      new Filiale('concierge_services','Concierge Services','Concierge','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/concierges_services.png',new CardDetails(2)),
-      new Filiale('janitorial_services','Janitorial Services','Janitorial','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/janitorial_services.png',new CardDetails(2)),
-      new Filiale('seco_tech','Seco Tech','Building Maintenance','',['images/new/bg_seco_tech.jpg'],'images/logos/seco_tech_logo.png','images/logos/seco_tech_white_logo.png','images/logos/building_maintenance.png',new CardDetails(3)),
+      new Filiale('seco_securite','Seco Securité','Security','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/security_services.png',new CardDetails(2,
+        [
+          {title: 'Surveillance'},
+          {title: 'Security System Solutions'},
+          {title: 'Maintenance of security systems'},
+          {title: 'Security consultancy'},
+          {title: 'Intellegence security'}
+        ]),[{
+        title: 'Seco Securité',
+        description: `Dedicated security service provider offering licensed temporary and permanent guards tailored to your unique needs, ensuring employee and asset safety.
+         Partnerships with 20+ properties nationwide, specializing in Residential, Commercial, Medical Facilities, Distribution Centers, Special Events, Government, and Education.
+
+         Commitment to collaborative partnerships, alleviating recruitment, hiring, and management burdens, while delivering exceptional service and desired outcomes. 
+         Expertise in tailored solutions, nationwide operations, and quality partnerships, leveraging extensive field experience.
+         
+         Comprehensive management support, competitive rates, and streamlined operations through our Corporate Support Team, handling recruitment, HR, payroll, insurance, benefits, and training.
+         
+         Experienced leaders ready to evaluate your needs and provide a tailored Proposal of Services. 
+         Let QS Security be your trusted solutions partner for efficient, professional, and secure operations.
+         `
+      }]),
+      new Filiale('optimal_staffing_services','Optimal Staffing Services','Staffing','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/staffing_services.png',new CardDetails(2),
+      [{
+        title: 'Building Maintenance',
+        description: `We are a premier provider of top-notch hospitality solutions tailored
+to elevate your guest experience. With a strong focus on quality,
+our comprehensive range of Turnkey Hospitality services includes
+housekeeping, laundry and maintenance.`
+      }]),
+      new Filiale('quality_service_hospitality','Quality Service Hospitality','Housekeeping','',['https://plus.unsplash.com/premium_photo-1682097409792-354d4d544753?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/house_keeping.png',new CardDetails(2),[{
+        title: 'Quality Service Hospitality',
+        description: `We are a premier provider of top-notch hospitality solutions tailored
+to elevate your guest experience. With a strong focus on quality,
+our comprehensive range of Turnkey Hospitality services includes
+housekeeping, laundry and maintenance.`
+      }]),
+      new Filiale('concierge_services','Concierge Services','Concierge','',['https://plus.unsplash.com/premium_photo-1683141112334-d7d404f6e716?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/concierges_services.png',new CardDetails(2),this.filialeDetails),
+      new Filiale('janitorial_services','Janitorial Services','Janitorial','',['https://plus.unsplash.com/premium_photo-1661662877086-4007ebf0378e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/janitorial_services.png',new CardDetails(2),this.filialeDetails),
+      new Filiale('seco_tech','Seco Tech','Building Maintenance','',['images/new/bg_seco_tech.jpg'],'images/logos/seco_tech_logo.png','images/logos/seco_tech_white_logo.png','images/logos/building_maintenance.png',new CardDetails(3),this.filialeDetails),
       new Filiale('seco_agro_industries','Seco Agro Industries','','',[
         'images/vecteezy/cover_seco_agro.jpg',
         'images/vecteezy/cover_seco_agro1.jpeg',
@@ -31,13 +72,13 @@ export class FilialeService {
         'images/vecteezy/cover_seco_agro12.jpg',
         'images/vecteezy/cover_seco_agro13.jpg',
         'https://plus.unsplash.com/premium_photo-1661962573121-d4c317caf908?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-      ],'images/logos/seco_agro_white_logo.png','images/logos/seco_agro_white_logo.png','fa-solid fa-seedling',new CardDetails(4)),
-      new Filiale('seco_energy_co','Seco Energy CO','','',['images/vecteezy/cover_seco_energy.jpg','images/vecteezy/cover_seco_energy1.JPG','images/vecteezy/cover_seco_energy2.JPG','https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'','','fa-solid fa-bolt',new CardDetails(5)),
-      new Filiale('seco_distributors','Seco Distributors','','',['https://www.plugandtrack.com/wp-content/uploads/2022/05/Normes-stockage-distribution-medicaments-e1652099964737.jpg'],'images/logos/seco_distributors_logo.png','images/logos/seco_distributors_white_logo.png','fa-solid fa-truck',new CardDetails(1)),
-      new Filiale('mass_funds','Mass Funds','','',['images/new/bg_mass_funds.jpg'],'','','fa-solid fa-sack-dollar',new CardDetails(2)),
-      new Filiale('mass_assurance','Mass Assurance','','',['images/new/bg_mass_assurance.jpg'],'','','fas fa-user-shield',new CardDetails(4)),
-      new Filiale('boyo_airways','Boyo Airways','','',['images/new/bg_seco_boyo.avif'],'images/logos/boyo_airways_white_logo.png','images/logos/boyo_airways_white_logo.png','fa-solid fa-plane-departure',new CardDetails(5)),
-      new Filiale('seco_univers_construction','Seco Univers Construction','','',['images/vecteezy/cover_seco_construction.jpg','images/vecteezy/cover_seco_construction1.jpg','images/vecteezy/cover_seco_construction2.JPG','images/new/bg_seco_univers_construction.jpg'],'images/logos/seco_univers_construction_white_logo.png','images/logos/seco_univers_construction_white_logo.png','fa-solid fa-person-digging',new CardDetails(1)),
+      ],'images/logos/seco_agro_white_logo.png','images/logos/seco_agro_white_logo.png','fa-solid fa-seedling',new CardDetails(4),this.filialeDetails),
+      new Filiale('seco_energy_co','Seco Energy CO','','',['images/vecteezy/cover_seco_energy.jpg','images/vecteezy/cover_seco_energy1.JPG','images/vecteezy/cover_seco_energy2.JPG','https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'','','fa-solid fa-bolt',new CardDetails(5),this.filialeDetails),
+      new Filiale('seco_distributors','Seco Distributors','','',['https://www.plugandtrack.com/wp-content/uploads/2022/05/Normes-stockage-distribution-medicaments-e1652099964737.jpg'],'images/logos/seco_distributors_logo.png','images/logos/seco_distributors_white_logo.png','fa-solid fa-truck',new CardDetails(1),this.filialeDetails),
+      new Filiale('mass_funds','Mass Funds','','',['images/new/bg_mass_funds.jpg'],'','','fa-solid fa-sack-dollar',new CardDetails(2),this.filialeDetails),
+      new Filiale('mass_assurance','Mass Assurance','','',['images/new/bg_mass_assurance.jpg'],'','','fas fa-user-shield',new CardDetails(4),this.filialeDetails),
+      new Filiale('boyo_airways','Boyo Airways','','',['images/new/bg_seco_boyo.avif'],'images/logos/boyo_airways_white_logo.png','images/logos/boyo_airways_white_logo.png','fa-solid fa-plane-departure',new CardDetails(5),this.filialeDetails),
+      new Filiale('seco_univers_construction','Seco Univers Construction','','',['images/vecteezy/cover_seco_construction.jpg','images/vecteezy/cover_seco_construction1.jpg','images/vecteezy/cover_seco_construction2.JPG','images/new/bg_seco_univers_construction.jpg'],'images/logos/seco_univers_construction_white_logo.png','images/logos/seco_univers_construction_white_logo.png','fa-solid fa-person-digging',new CardDetails(1),this.filialeDetails),
   ]
 
   filialesPays: FilialePays[] = [
@@ -71,6 +112,8 @@ export class FilialeService {
     new FilialePays('bresil','seco_univers_construction')
 
   ]
+
+  
   // document.documentElement.style.setProperty('--body-bg', 'url(https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)')
 
   getFilialeByNameAndPays(name:string,pays:string):Filiale|null{

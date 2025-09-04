@@ -47,19 +47,32 @@
     
         </div>
 
+    <section style="padding: 25px 0;">
+        <div class="container">
+            @for(fd of filiale.filialeDetails; track $index){
+                
+                <h2 style="font-weight: bold; margin-bottom: 10px;">{{fd.title}}</h2>
+                <p style=" font-size: 18px; margin-bottom: 10px;">
+                    {{fd.description}}
+                </p>
+            }
+            
+        </div>
+    </section>
+
          <!-- features section -->
-    <section class="w3l-grids-block py-5" id="features">
-        <div class="container py-lg-5 py-md-4 py-2">
-            <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:600px;">
-                <!-- <h5 class="small-title mb-2">Nos Atouts</h5> -->
+    <section class="w3l-grids-block pt-2 pb-5" id="features">
+        <div class="container py-lg-2 py-md-2 py-2">
+            <!-- <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:600px;">
+                
                 <h3 class="title-style" id="service-title">{{filiale.name}}</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero itaque iste quos porro animi. Magni, ad obcaecati? Iste.</p>
-            </div>
+            </div> -->
             
             <div class="cards-uiverse">
                 <!-- From Uiverse.io by gharsh11032000 --> 
-                 @for( i of [1,2,3,4,5]; track i){
-                    <my-card [version]="filiale.cardDetails.id" [title1]="filiale.name"/>
+                 @for( cdi of filiale.cardDetails.infos; track $index){
+                    <my-card [version]="filiale.cardDetails.id" [title1]="cdi.title"/>
                  }
                 
 
@@ -71,5 +84,7 @@
     <!-- //features section -->
 
     <eulen-contact-section></eulen-contact-section>
-    
+    <section class="pb-5 pt-2" >
+            <our-clients-section/>
+    </section>
 <app-footer/>

@@ -7,10 +7,11 @@ import { Filiale } from '../../../models/Filiale';
 import { MyCard } from "../../my-card/my-card";
 import { BannerSlider } from "../../banner-slider/banner-slider";
 import { ContactSection } from "../../eulen/contact-section/contact-section";
+import { OurClientsSection } from "../../our-clients-section/our-clients-section";
 
 @Component({
   selector: 'app-filiale-page',
-  imports: [Header, Footer, RouterLink, MyCard, BannerSlider, ContactSection],
+  imports: [Header, Footer, RouterLink, MyCard, BannerSlider, ContactSection, OurClientsSection],
   templateUrl: './filiale-page.html',
   styleUrl: './filiale-page.scss'
 })

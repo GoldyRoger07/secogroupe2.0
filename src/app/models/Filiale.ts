@@ -1,4 +1,5 @@
 import { CardDetails } from "./CardDetails";
+import { FilialeDetails } from "./FilialeDetails";
 
 export class Filiale{
     constructor(
@@ -10,6 +11,7 @@ export class Filiale{
         public logo = "",
         public logoWhite = "",
         public icon = "",
-        public cardDetails = new CardDetails()
+        public cardDetails = new CardDetails(),
+        public filialeDetails: FilialeDetails[] = []
     ){}
 }
