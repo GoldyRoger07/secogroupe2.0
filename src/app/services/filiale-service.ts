@@ -16,16 +16,40 @@ export class FilialeService {
     lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   }]
 
+  secoTechDetails: FilialeDetails[] = [
+    {
+      title: 'Building Maintenance',
+      description: 'With over a decade of experience, QS consistently provides exceptional Janitorial, Security, Concierge, and Maintenance services to clients nationwide.'
+    },
+    {
+      title: '',
+      description: 'QS boasts a dedicated team of full-time, in-house recruiters employing a specialized methodology to ensure the acquisition of personnel with the necessary skill sets.'
+    },
+    {
+      title: '',
+      description: 'Our continuous training initiatives are thoughtfully designed to enhance the productivity and dependability of our associates, setting them apart from competitors.'
+    },
+    {
+      title: '',
+      description: 'Our management team is well-versed in delivering professional oversight and supervision to all field associates, guaranteeing our clients receive services of the utmost quality.'
+    },
+    {
+      title: '',
+      description: 'Our company focus is to diligently serve the Corporate Sector by providing specialized facilities management services'
+    }
+  ]
+
   filiales:Filiale[] = [
-      new Filiale('seco_securite','Seco Securité','Security','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/security_services.png',new CardDetails(2,
+      new Filiale('seco_securite','Seco Security','Security','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/security_services.png',new CardDetails(2,
         [
+         
+          {title: 'Security Guard'},
           {title: 'Surveillance'},
-          {title: 'Security System Solutions'},
           {title: 'Maintenance of security systems'},
           {title: 'Security consultancy'},
           {title: 'Intellegence security'}
         ]),[{
-        title: 'Seco Securité',
+        title: 'Seco Security',
         description: `Dedicated security service provider offering licensed temporary and permanent guards tailored to your unique needs, ensuring employee and asset safety.
          Partnerships with 20+ properties nationwide, specializing in Residential, Commercial, Medical Facilities, Distribution Centers, Special Events, Government, and Education.
 
@@ -38,24 +62,59 @@ export class FilialeService {
          Let QS Security be your trusted solutions partner for efficient, professional, and secure operations.
          `
       }]),
-      new Filiale('optimal_staffing_services','Optimal Staffing Services','Staffing','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/staffing_services.png',new CardDetails(2),
-      [{
-        title: 'Building Maintenance',
+      new Filiale('optimal_staffing_services','Optimal Staffing Services','Staffing','',['https://i0.wp.com/careerical.com/wp-content/uploads/2025/02/Top-Recruitment-Agencies-in-Italy-Providing-Jobs-with-Visa-Sponsorship.jpg?fit=1200%2C628&ssl=1'],'images/logos/seco_secu_logo.png','','images/logos/staffing_services.png',new CardDetails(2),
+      [
+        {
+        title: 'Staffing Service',
+        description: `With a 13-year legacy as a premier recruitment and staffing leader, we excel
+at connecting businesses with top talent and providing comprehensive staffing
+solutions. Our team of human capital advocates meticulously matches skills
+and aspirations to ensure optimal results in every hire we make. Passion and
+precision drive our seamless outsourcing and staffing solutions, culminating in
+the success of both businesses and individuals.`
+      },
+      {
+        title: '',
+        description: `
+        Our expert team thrives in diverse industries, consistently delivering exceptional
+candidates to drive growth and innovation. Through transformative partnerships,
+we harmonize ambitions with our staffing and outsourcing expertise, creating a
+powerful synergy that elevates businesses to new heights. 
+        `
+      },
+      {
+        title: '',
+        description: `
+        Unlock your company’s full potential through strategic hires and comprehensive
+staffing strategies that align with your objectives. Empower success and foster
+growth with the Quality Staffing and Outsourcing Solution. Experience a journey
+of endless possibilities as we work together to meet your staffing needs and
+achieve your business goals.
+        `
+      },
+      {
+        title: '',
+        description: `
+        Count on us as your dedicated partner for exceptional hires and staffing solutions
+that make a difference. 
+        `
+      },
+
+    ]),
+      new Filiale('housekeeping_services','Housekeeping Services','Housekeeping','',['https://plus.unsplash.com/premium_photo-1682097409792-354d4d544753?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/house_keeping.png',new CardDetails(2),[{
+        title: 'Hospitality And Cleaning Services',
         description: `We are a premier provider of top-notch hospitality solutions tailored
 to elevate your guest experience. With a strong focus on quality,
 our comprehensive range of Turnkey Hospitality services includes
 housekeeping, laundry and maintenance.`
-      }]),
-      new Filiale('quality_service_hospitality','Quality Service Hospitality','Housekeeping','',['https://plus.unsplash.com/premium_photo-1682097409792-354d4d544753?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/house_keeping.png',new CardDetails(2),[{
-        title: 'Quality Service Hospitality',
-        description: `We are a premier provider of top-notch hospitality solutions tailored
-to elevate your guest experience. With a strong focus on quality,
-our comprehensive range of Turnkey Hospitality services includes
-housekeeping, laundry and maintenance.`
+      },
+      {
+        title: '',
+        description: 'Our dedicated team is committed to enhancing the ambiance and comfort of your establishment. From luxury, hotels, and resorts to bustling casinos, hospitals, and serene retirement facilities, we cater to a diverse clientele that demands nothing but excellence. With a proven track record, we ensure immaculate public areas, well-maintained facilities, and a seamless guest journey'
       }]),
       new Filiale('concierge_services','Concierge Services','Concierge','',['https://plus.unsplash.com/premium_photo-1683141112334-d7d404f6e716?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/concierges_services.png',new CardDetails(2),this.filialeDetails),
       new Filiale('janitorial_services','Janitorial Services','Janitorial','',['https://plus.unsplash.com/premium_photo-1661662877086-4007ebf0378e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/janitorial_services.png',new CardDetails(2),this.filialeDetails),
-      new Filiale('seco_tech','Seco Tech','Building Maintenance','',['images/new/bg_seco_tech.jpg'],'images/logos/seco_tech_logo.png','images/logos/seco_tech_white_logo.png','images/logos/building_maintenance.png',new CardDetails(3),this.filialeDetails),
+      new Filiale('seco_tech','Seco Tech','Building Maintenance','',['images/new/bg_seco_tech.jpg'],'images/logos/seco_tech_logo.png','images/logos/seco_tech_white_logo.png','images/logos/building_maintenance.png',new CardDetails(3),this.secoTechDetails),
       new Filiale('seco_agro_industries','Seco Agro Industries','','',[
         'images/vecteezy/cover_seco_agro.jpg',
         'images/vecteezy/cover_seco_agro1.jpeg',
@@ -85,7 +144,7 @@ housekeeping, laundry and maintenance.`
     new FilialePays('usa','seco_securite'),
     new FilialePays('usa','seco_tech'),
     new FilialePays('usa','optimal_staffing_services'),
-    new FilialePays('usa','quality_service_hospitality'),
+    new FilialePays('usa','housekeeping_services'),
     new FilialePays('usa','janitorial_services'),
     new FilialePays('usa','concierge_services'),
     new FilialePays('canada','seco_securite'),
