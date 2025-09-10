@@ -18,6 +18,12 @@ export class BannerSlider implements AfterViewInit{
 
   ]
 
+  @Input()
+  xPos = "0px"
+
+  @Input()
+  yPos = "0px"
+
   ngAfterViewInit(): void {
       const swiper1 = new Swiper('#bannerSlider', {
         // Optional parameters

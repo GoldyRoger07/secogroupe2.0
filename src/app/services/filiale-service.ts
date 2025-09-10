@@ -19,7 +19,8 @@ export class FilialeService {
   secoTechDetails: FilialeDetails[] = [
     {
       title: 'Building Maintenance',
-      description: 'With over a decade of experience, QS consistently provides exceptional Janitorial, Security, Concierge, and Maintenance services to clients nationwide.'
+      description: 'With over a decade of experience, QS consistently provides exceptional Janitorial, Security, Concierge, and Maintenance services to clients nationwide.',
+      slogan: 'Our company focus is to diligently serve the Corporate Sector by providing specialized facilities management services.'
     },
     {
       title: '',
@@ -60,7 +61,8 @@ export class FilialeService {
          
          Experienced leaders ready to evaluate your needs and provide a tailored Proposal of Services. 
          Let QS Security be your trusted solutions partner for efficient, professional, and secure operations.
-         `
+         `,
+         slogan: 'Our company focus is to diligently serve the Corporate Sector by providing specialized Security & Loss Prevention Services.'
       }]),
       new Filiale('optimal_staffing_services','Optimal Staffing Services','Staffing','',['https://i0.wp.com/careerical.com/wp-content/uploads/2025/02/Top-Recruitment-Agencies-in-Italy-Providing-Jobs-with-Visa-Sponsorship.jpg?fit=1200%2C628&ssl=1'],'images/logos/seco_secu_logo.png','','images/logos/staffing_services.png',new CardDetails(2),
       [
@@ -71,7 +73,8 @@ at connecting businesses with top talent and providing comprehensive staffing
 solutions. Our team of human capital advocates meticulously matches skills
 and aspirations to ensure optimal results in every hire we make. Passion and
 precision drive our seamless outsourcing and staffing solutions, culminating in
-the success of both businesses and individuals.`
+the success of both businesses and individuals.`,
+        slogan: 'Our company focus is to diligently serve the Corporate Sector by providing specialized Staffing and recruiting Services.'
       },
       {
         title: '',
@@ -106,13 +109,16 @@ that make a difference.
         description: `We are a premier provider of top-notch hospitality solutions tailored
 to elevate your guest experience. With a strong focus on quality,
 our comprehensive range of Turnkey Hospitality services includes
-housekeeping, laundry and maintenance.`
+housekeeping, laundry and maintenance.`,
+        slogan: `Our Company focus is to diligently serve the Corporate Sector
+by providing specialized Housekeeping & Commercial Cleaning
+Services. `
       },
       {
         title: '',
         description: 'Our dedicated team is committed to enhancing the ambiance and comfort of your establishment. From luxury, hotels, and resorts to bustling casinos, hospitals, and serene retirement facilities, we cater to a diverse clientele that demands nothing but excellence. With a proven track record, we ensure immaculate public areas, well-maintained facilities, and a seamless guest journey'
       }]),
-      new Filiale('concierge_services','Concierge Services','Concierge','',['https://plus.unsplash.com/premium_photo-1683141112334-d7d404f6e716?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/concierges_services.png',new CardDetails(2),this.filialeDetails),
+      new Filiale('concierge_services','Concierge Services','Concierge','',['https://media.cnn.com/api/v1/images/stellar/prod/111005061730-concierge-ritz.jpg?q=w_4000,h_3000,x_0,y_0,c_fill'],'images/logos/seco_secu_logo.png','','images/logos/concierges_services.png',new CardDetails(2),this.filialeDetails),
       new Filiale('janitorial_services','Janitorial Services','Janitorial','',['https://plus.unsplash.com/premium_photo-1661662877086-4007ebf0378e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'],'images/logos/seco_secu_logo.png','','images/logos/janitorial_services.png',new CardDetails(2),this.filialeDetails),
       new Filiale('seco_tech','Seco Tech','Building Maintenance','',['images/new/bg_seco_tech.jpg'],'images/logos/seco_tech_logo.png','images/logos/seco_tech_white_logo.png','images/logos/building_maintenance.png',new CardDetails(3),this.secoTechDetails),
       new Filiale('seco_agro_industries','Seco Agro Industries','','',[

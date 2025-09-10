@@ -7,7 +7,7 @@
         </section>
      </div> -->
 
-     <banner-slider [imgUrls]="filiale.cover">
+     <banner-slider [imgUrls]="filiale.cover" [yPos]="yPos">
         <div style="display: flex; align-items: center; height: 100%;">
             <div class="container" >
             <div class="w3l-breadcrumb py-lg-5" style="background: transparent !important;">
@@ -82,7 +82,10 @@
         </div>
     </section>
     <!-- //features section -->
-
+     @if(filiale.filialeDetails[0].slogan){
+        <app-slogan [text]="filiale.filialeDetails[0].slogan"></app-slogan>
+     }
+    
     <eulen-contact-section></eulen-contact-section>
     <section class="pb-5 pt-2" >
             <our-clients-section/>

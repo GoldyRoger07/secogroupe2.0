@@ -4,7 +4,7 @@
     <!-- Slides -->
      @for (imgUrl of imgUrls; track $index) {
         <div class="swiper-slide">
-            <img [src]="imgUrl" alt="slider">
+            <img [src]="imgUrl" alt="slider" [style]="'--object-position:'+xPos+' '+yPos+';'">
         </div>
      }
 

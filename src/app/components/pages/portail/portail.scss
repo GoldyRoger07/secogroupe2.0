@@ -27,6 +27,20 @@ section .cards-flex{
     margin-bottom: 30px;
 }
 
+// @media screen and (width < 1200px) {
+//     section .cards-flex{
+//         justify-content: start;
+       
+//     }
+// }
+
+section .cards-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    justify-content: center;
+    gap: 10px;
+}
+
 .scroll-wrapper-1 {
   overflow: hidden;
   white-space: nowrap;

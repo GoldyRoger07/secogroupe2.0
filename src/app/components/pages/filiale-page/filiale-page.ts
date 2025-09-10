@@ -8,16 +8,18 @@ import { MyCard } from "../../my-card/my-card";
 import { BannerSlider } from "../../banner-slider/banner-slider";
 import { ContactSection } from "../../eulen/contact-section/contact-section";
 import { OurClientsSection } from "../../our-clients-section/our-clients-section";
+import { Slogan } from "../../slogan/slogan";
 
 @Component({
   selector: 'app-filiale-page',
-  imports: [Header, Footer, RouterLink, MyCard, BannerSlider, ContactSection, OurClientsSection],
+  imports: [Header, Footer, RouterLink, MyCard, BannerSlider, ContactSection, OurClientsSection, Slogan],
   templateUrl: './filiale-page.html',
   styleUrl: './filiale-page.scss'
 })
 export class FilialePage implements OnInit{
     pays = ""
     filialeName = ""
+    yPos = "0px"
 
     filiale: Filiale = new Filiale()
 
@@ -32,6 +34,13 @@ export class FilialePage implements OnInit{
           console.log(this.filiale)
           document.documentElement.style.setProperty('--body-bg', `url(${this.filiale.cover}), url(/secogroupe2.0${this.filiale.cover})`);
 
+          switch(this.filialeName){
+            case 'concierge_services':
+              this.yPos = "-200px"
+            break;
+          }
       });
+
+      
     }
 }
