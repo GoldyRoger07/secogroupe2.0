@@ -44,11 +44,11 @@ export class FilialeService {
       new Filiale('seco_securite','Seco Security','Security','',['images/new/bg_seco_securite.jpg'],'images/logos/seco_secu_logo.png','','images/logos/security_services.png',new CardDetails(2,
         [
          
-          {title: 'Security Guard'},
-          {title: 'Surveillance'},
-          {title: 'Maintenance of security systems'},
-          {title: 'Security consultancy'},
-          {title: 'Intellegence security'}
+          {title: 'Security Guard', link: '/seco_securite/security-guard', cover: 'https://cdn.prod.website-files.com/65e795a2f83946f9da1f1bcc/67c7c2c8c603a6e7c899e103_Belfry_Imagery4.png'},
+          {title: 'Surveillance', link: '/seco_securite/surveillance', cover: 'https://flyinglocksmiths.com/wp-content/smush-webp/TFL_blog_security_cameras-e1557770076716.jpg.webp'},
+          {title: 'Maintenance of security systems', link: '/seco_securite/maintenance-of-security-systems', cover:'https://protechsecurity.com/wp-content/uploads/2021/09/security-system-maintenance-1040x555.jpg'},
+          {title: 'Security consultancy', link: '/seco_securite/security-consultancy', cover: 'https://www.fujitsu.com/caribbean/imagesgig5/consulting-banner_tcm128-6603636_tcm128-6286607-32.jpg'},
+          {title: 'Intellegence security', link: '/seco_securite/intellegence-security', cover: 'https://www.barrybros.com/wp-content/uploads/2023/03/Artificial-Intelligence-Depositphotos_605786810_S.jpg.webp'}
         ]),[{
         title: 'Seco Security',
         description: `Dedicated security service provider offering licensed temporary and permanent guards tailored to your unique needs, ensuring employee and asset safety.

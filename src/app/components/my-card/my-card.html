@@ -58,3 +58,11 @@
                     </div>
 	</div>
 }
+
+@if(version === 7){
+        <div class="card7"[routerLink]="link">
+                <div class="overlay"></div>
+                <h4>{{title1}}</h4>
+                <div class="cover" [style]="'background-image:'+cover+';'"></div>
+        </div>
+}

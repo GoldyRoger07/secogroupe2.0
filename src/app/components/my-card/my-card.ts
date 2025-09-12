@@ -1,8 +1,9 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'my-card',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './my-card.html',
   styleUrl: './my-card.scss',
 })
@@ -19,4 +20,7 @@ export class MyCard {
 
   @Input()
   cover = ""
+
+  @Input()
+  link = ""
 }
