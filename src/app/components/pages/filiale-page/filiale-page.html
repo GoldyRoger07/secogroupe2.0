@@ -82,7 +82,10 @@
             <div class="cards7">
                
                  @for( cdi of filiale.cardDetails.infos; track $index){
-                    <my-card [version]="7" [title1]="cdi.title" [routerLink]="'/filiales/'+pays+cdi.link" [cover]="'url('+cdi.cover+')'"/>
+                    <a [routerLink]="'/filiales/'+pays+cdi.link">
+                        <my-card [version]="7" [title1]="cdi.title"  [cover]="'url('+cdi.cover+')'"/>
+                    </a>
+                    
                  }
                    
             </div>

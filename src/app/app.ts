@@ -14,23 +14,7 @@ export class App {
 
    constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {}
 
-    this.router.events
-      .pipe(
-        filter(event => event instanceof NavigationEnd)
-      )
-      .subscribe((event: NavigationEnd) => {
-        console.log('URL changée :', event.urlAfterRedirects);
-
-        // 🔁 Action à effectuer à chaque changement de route
-        this.topFunction();
-      });
-  }
-
-  topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-  }
+ 
 }

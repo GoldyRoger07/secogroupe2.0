@@ -22563,3 +22563,42 @@ my-card{
 
 
 
+.fade{
+  animation: fade-animation linear;
+  animation-timeline: view();
+  animation-range: entry 0% ;
+
+}
+
+.zoom{
+  animation: zoom-animation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
+}
+
+// .zoom,.fade{
+//   animation-timeline: view();
+//   animation-range: entry 0% cover 40%;
+// }
+@keyframes zoom-animation {
+  from{
+    
+    scale: 0.5;
+  }
+  to{
+    
+    scale: 1;
+  }
+}
+
+@keyframes fade-animation {
+  from{
+    opacity: 0;
+    
+  }
+  to{
+    opacity: 1;
+    
+  }
+}
